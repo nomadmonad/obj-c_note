@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *ResultField;
+- (IBAction)switchOnOff:(id)sender;
+- (IBAction)ArraySetupButton:(id)sender;
 
 @end
