@@ -64,5 +64,11 @@
     index = [devices indexOfObject:@"iPad"];
     NSLog(@"iPad is at index: %d", index);
 
+    BOOL isFound = [devices containsObject:@"iPhone"];
+    if (isFound) {
+        NSLog(@"iPhone is contained!");
+    } else {
+        NSLog(@"iPhone is not contained...");
+    }
 }
 @end
