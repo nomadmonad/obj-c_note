@@ -8,6 +8,20 @@
 
 #import "ViewController.h"
 
+NSInteger intSort(id num1, id num2, void *context)
+{
+    int v1 = [num1 intValue];
+    int v2 = [num2 intValue];
+    
+    if (v1 < v2) {
+        return NSOrderedAscending;
+    } else if (v1 > v2) {
+        return NSOrderedDescending;
+    } else {
+        return NSOrderedSame;
+    }
+}
+
 @interface ViewController ()
 
 @end
@@ -76,7 +90,30 @@
         NSLog(@"iPhone is not contained...");
     }
     
+    // アルファベット順にソートする
+    NSArray *sortedDevices = [devices sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    NSLog(@"sorted devices = %@", sortedDevices);
     
+    sortedDevices = [devices sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"" ascending:YES]]];
+    NSLog(@"reversed devices = %@", sortedDevices);
+    
+    // 独自のソート関数を作成する
+    NSMutableArray *vlist = [NSMutableArray arrayWithCapacity:10];
+    NSInteger v;
+    for (int i = 0; i < 10; i++) {
+        v = arc4random() % 30;
+        [vlist addObject:[NSNumber numberWithInteger:v]];
+    }
+    NSLog(@"vlist is : %@", vlist);
+    
+    NSArray *sortedList = [vlist sortedArrayUsingFunction:intSort context:nil];
+    NSLog(@"sorted vlist is: %@", sortedList);
+    
+    // enumeratorから配列を作成する
+    NSArray *reverseList = [[devices reverseObjectEnumerator] allObjects];
+    NSLog(@"reversed device list is: %@", reverseList);
     
 }
+
 @end
+
