@@ -41,4 +41,11 @@
     NSString *lastDevice = [devices lastObject];
     NSLog(@"配列の最後の要素は、%@", lastDevice);
 }
+
+- (IBAction)mutableArraySetup:(id)sender {
+    NSMutableArray *devices = [NSMutableArray array];
+    [devices addObject:@"iPod"];
+    [devices addObjectsFromArray:@[@"iPhone", @"iPad"]];
+    NSLog(@"MutableArray devices = %@", devices);
+}
 @end

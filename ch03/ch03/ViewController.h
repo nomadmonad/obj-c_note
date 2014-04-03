@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *ResultField;
 - (IBAction)switchOnOff:(id)sender;
 - (IBAction)ArraySetupButton:(id)sender;
+- (IBAction)mutableArraySetup:(id)sender;
 
 @end
