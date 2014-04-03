@@ -47,5 +47,22 @@
     [devices addObject:@"iPod"];
     [devices addObjectsFromArray:@[@"iPhone", @"iPad"]];
     NSLog(@"MutableArray devices = %@", devices);
+    
+    [devices insertObject:@"Newton" atIndex:0];
+    NSLog(@"Is Newton inserted at top? devices = %@", devices);
+
+    [devices insertObject:@"OS9" atIndex:1];
+    [devices insertObject:@"PowerMac" atIndex:2];
+    NSLog(@"OS9 and PowerMac Added. devices = %@", devices);
+    [devices removeObjectAtIndex:1];
+    NSLog(@"OS9 deleted. devices = %@", devices);
+    [devices removeObject:@"PowerMac"];
+    NSLog(@"PowerMac deleted. devices = %@", devices);
+    
+    NSUInteger index = [devices indexOfObject:@"Newton"];
+    NSLog(@"newton is at index: %d", index);
+    index = [devices indexOfObject:@"iPad"];
+    NSLog(@"iPad is at index: %d", index);
+
 }
 @end
