@@ -113,6 +113,30 @@ NSInteger intSort(id num1, id num2, void *context)
     NSArray *reverseList = [[devices reverseObjectEnumerator] allObjects];
     NSLog(@"reversed device list is: %@", reverseList);
     
+    // tで始まる要素をフィルタリングする
+    NSMutableArray *numbers = [NSMutableArray arrayWithArray:@[@"one", @"two", @"three", @"four", @"five"]];
+    NSPredicate *predicate1 = [NSPredicate predicateWithFormat:@"%K beginswith %@", @"self", @"t"];
+    [numbers filterUsingPredicate:predicate1];
+    NSLog(@"filtered with i, list goes: %@", numbers);
+    [numbers removeAllObjects];
+    
+    [numbers addObjectsFromArray:@[@"one", @"two", @"three", @"four", @"five"]];
+    NSPredicate *predicateWithE = [NSPredicate predicateWithFormat:@"%K contains %@", @"self", @"e"];
+    [numbers filterUsingPredicate:predicateWithE];
+    NSLog(@"filtered with e, list goes: %@", numbers);
+    [numbers removeAllObjects];
+    
+    [numbers addObjectsFromArray:@[@"one", @"two", @"three", @"four", @"five"]];
+    NSPredicate *predicateWithLength = [NSPredicate predicateWithFormat:@"length == 3"];
+    [numbers filterUsingPredicate:predicateWithLength];
+    NSLog(@"filtered with length, list goes: %@", numbers);
+    [numbers removeAllObjects];
+    
+    [numbers addObjectsFromArray:@[@3, @18, @20, @7, @9, @10]];
+    NSPredicate *predicateWithNumber = [NSPredicate predicateWithFormat:@"%K >= %d", @"self", 10];
+    [numbers filterUsingPredicate:predicateWithNumber];
+    NSLog(@"filtered with greater then 10, list goes: %@", numbers);
+
 }
 
 @end
