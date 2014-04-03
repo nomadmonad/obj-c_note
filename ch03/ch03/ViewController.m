@@ -139,5 +139,13 @@ NSInteger intSort(id num1, id num2, void *context)
 
 }
 
+- (IBAction)nsDictionaySetup:(id)sender {
+    // ディクショナリの生成・値の取得
+    NSDictionary *course = @{@"A": @"水泳", @"B": @"バイク", @"C": @"ヨガ"};
+    NSLog(@"Aコース %@", course[@"A"]);
+    NSLog(@"Bコース %@", course[@"B"]);
+    
+}
+
 @end
 

@@ -13,5 +13,6 @@
 - (IBAction)switchOnOff:(id)sender;
 - (IBAction)ArraySetupButton:(id)sender;
 - (IBAction)mutableArraySetup:(id)sender;
+- (IBAction)nsDictionaySetup:(id)sender;
 
 @end
