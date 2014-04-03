@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-- (IBAction)switchOnOff:(UISwitch *)sender;
 
 @end
 
@@ -33,5 +32,10 @@
     } else {
         self.view.backgroundColor = [UIColor whiteColor];
     }
+}
+
+- (IBAction)ArraySetupButton:(id)sender {
+    NSArray *devices = @[@"ipod", @"iPhone", @"iPad"];
+    NSLog(@"devices = %@", devices);
 }
 @end
