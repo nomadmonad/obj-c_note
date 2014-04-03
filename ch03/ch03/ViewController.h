@@ -15,5 +15,7 @@
 - (IBAction)mutableArraySetup:(id)sender;
 - (IBAction)nsDictionaySetup:(id)sender;
 - (IBAction)nsMutableDictionarySetup:(id)sender;
+- (IBAction)nsSetSetup:(id)sender;
+
 
 @end

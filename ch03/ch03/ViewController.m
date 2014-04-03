@@ -176,5 +176,78 @@ NSInteger intSort(id num1, id num2, void *context)
     
 }
 
+- (IBAction)nsSetSetup:(id)sender {
+    NSArray *color1 = @[@"blue", @"red", @"yellow", @"white"];
+    NSArray *color2 = @[@"green", @"white", @"black"];
+    
+    // NSSet
+    NSSet *colorSet1 = [NSSet setWithArray:color1];
+    NSSet *colorSet2 = [NSSet setWithArray:color2];
+    NSLog(@"colorset1に含まれる色: %@", colorSet1);
+    NSLog(@"colorset2に含まれる色: %@", colorSet2);
+    
+    // NSMutableSetで和集合
+    NSMutableSet *allColors = [NSMutableSet setWithCapacity:1];
+    [allColors unionSet:colorSet1];
+    [allColors unionSet:colorSet2];
+    NSLog(@"すべての色: %@", allColors);
+    
+    //積集合
+    [allColors removeAllObjects];
+    [allColors unionSet:colorSet1];
+    [allColors intersectSet:colorSet2];
+    NSLog(@"共通する色: %@", allColors);
+    
+    //差集合
+    [allColors removeAllObjects];
+    [allColors unionSet:colorSet1];
+    [allColors minusSet:colorSet2];
+    NSLog(@"Colorset2に存在しない色: %@", allColors);
+    
+    NSSet *set1 = [NSSet setWithArray:@[@"blue", @"red", @"white", @"yellow"]];
+    NSSet *set2 = [NSSet setWithArray:@[@"white", @"blue"]];
+    NSSet *set3 = [NSSet setWithArray:@[@"pink"]];
+    NSLog(@"set1にset2が含まれるか？ %@", ([set2 isSubsetOfSet:set1]==YES ? @"YES":@"NO"));
+    NSLog(@"set1にset3が含まれるか？ %@", ([set3 isSubsetOfSet:set1]==YES ? @"YES":@"NO"));
+    
+    NSSet *sourceSet = [NSSet setWithArray:@[@"One", @"Two", @"Three", @"Four", @"Five"]];
+    NSPredicate *predicate1 = [NSPredicate predicateWithFormat:@"%K beginswith %@", @"self", @"T"];
+    NSSet *filteredSet = [sourceSet filteredSetUsingPredicate:predicate1];
+    NSLog(@"%@", filteredSet);
+    
+    NSArray *nums = @[@"One", @"Two", @"Three", @"Four", @"Five"];
+    NSMutableSet *numSet = [NSMutableSet setWithArray:nums];
+    [numSet addObject:@"Six"];
+    NSLog(@"numset = %@", numSet);
+    
+    NSMutableOrderedSet *orderedSet = [NSMutableOrderedSet orderedSetWithArray:nums];
+    [orderedSet addObject:@"Six"];
+    NSLog(@"orderedSet = %@", orderedSet);
+    
+    NSLog(@"インデックスの1番目は: %@", orderedSet[1]);
+    
+    NSComparisonResult (^comparator)(id, id)=^(id obj1, id obj2)
+    {
+        int v1 = [obj1 intValue];
+        int v2 = [obj2 intValue];
+        
+        if (v1 < v2) {
+            return (NSComparisonResult)NSOrderedAscending;
+        } else if (v1 > v2) {
+            return (NSComparisonResult)NSOrderedDescending;
+        } else {
+            return (NSComparisonResult)NSOrderedSame;
+        }
+    };
+    
+    
+    NSArray *values = @[@2, @8, @24, @3, @5];
+    NSMutableOrderedSet *valuesOrderedSet = [NSMutableOrderedSet orderedSetWithArray:values];
+    [valuesOrderedSet addObject:@11];
+    
+    NSArray *sortedArray = [valuesOrderedSet sortedArrayUsingComparator:comparator];
+    NSLog(@"%@", sortedArray);
+}
+
 @end
 
