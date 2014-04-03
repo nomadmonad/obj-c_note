@@ -37,5 +37,8 @@
 - (IBAction)ArraySetupButton:(id)sender {
     NSArray *devices = @[@"ipod", @"iPhone", @"iPad"];
     NSLog(@"devices = %@", devices);
+    
+    NSString *lastDevice = [devices lastObject];
+    NSLog(@"配列の最後の要素は、%@", lastDevice);
 }
 @end
