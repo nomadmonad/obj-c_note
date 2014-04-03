@@ -20,7 +20,7 @@
                                 <rect key="frame" x="136" y="75" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="switchOnOff:" destination="vXZ-lx-hvc" eventType="valueChanged" id="WO0-os-uDg"/>
+                                    <action selector="switchOnOff:" destination="vXZ-lx-hvc" eventType="valueChanged" id="sm3-ie-qRY"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrQ-tw-RjA">
@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ArraySetup"/>
                                 <connections>
-                                    <action selector="ArraySetupButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9WZ-Zn-xy9"/>
+                                    <action selector="ArraySetupButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gxZ-NR-hkF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXF-cE-erM">
