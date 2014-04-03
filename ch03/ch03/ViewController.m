@@ -144,6 +144,11 @@ NSInteger intSort(id num1, id num2, void *context)
     NSDictionary *course = @{@"A": @"水泳", @"B": @"バイク", @"C": @"ヨガ"};
     NSLog(@"Aコース %@", course[@"A"]);
     NSLog(@"Bコース %@", course[@"B"]);
+
+    NSDictionary *prizeForMoney = @{@"GOLD": @25000,
+                                    @"SILVER": @12000,
+                                    @"BRONSE": @5000};
+    NSLog(@"金賞は %d円", [prizeForMoney[@"GOLD"] intValue]);
     
 }
 
