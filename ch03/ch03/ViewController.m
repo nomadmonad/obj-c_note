@@ -152,5 +152,29 @@ NSInteger intSort(id num1, id num2, void *context)
     
 }
 
+- (IBAction)nsMutableDictionarySetup:(id)sender {
+    // NSMutableDictionaryの生成・値の取得
+    NSMutableDictionary *prize = [NSMutableDictionary dictionaryWithCapacity:3];
+    
+    prize[@"GOLD"] = @"箱根旅行";
+    [prize setValue:@"iPod" forKey:@"SILVER"];
+    [prize setValue:@"お食事券" forKey:@"BRONZE"];
+    NSLog(@"金賞の景品 %@", prize[@"GOLD"]);
+    NSLog(@"銀賞の景品 %@", prize[@"SILVER"]);
+    NSLog(@"銅賞の景品 %@", prize[@"BRONZE"]);
+    
+    prize[@"GOLD"] = @"ハワイ旅行";
+    NSLog(@"金賞の景品 %@", prize[@"GOLD"]);
+    NSLog(@"銀賞の景品 %@", prize[@"SILVER"]);
+    NSLog(@"銅賞の景品 %@", prize[@"BRONZE"]);
+
+    NSLog(@"削除前の個数: %d", prize.count);
+    [prize removeObjectForKey:@"GOLD"];
+    NSLog(@"削除後の個数: %d", prize.count);
+    [prize removeAllObjects];
+    NSLog(@"全削除後の個数: %d", prize.count);
+    
+}
+
 @end
 
