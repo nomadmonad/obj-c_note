@@ -17,13 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)switchOnOff:(UISwitch *)sender {
@@ -43,32 +41,42 @@
 }
 
 - (IBAction)mutableArraySetup:(id)sender {
+    // NSMutableArrayの作成・要素追加
     NSMutableArray *devices = [NSMutableArray array];
     [devices addObject:@"iPod"];
     [devices addObjectsFromArray:@[@"iPhone", @"iPad"]];
     NSLog(@"MutableArray devices = %@", devices);
     
+    // インデックスを指定して要素追加
     [devices insertObject:@"Newton" atIndex:0];
     NSLog(@"Is Newton inserted at top? devices = %@", devices);
 
+    // インデックスで要素の削除
     [devices insertObject:@"OS9" atIndex:1];
     [devices insertObject:@"PowerMac" atIndex:2];
     NSLog(@"OS9 and PowerMac Added. devices = %@", devices);
     [devices removeObjectAtIndex:1];
     NSLog(@"OS9 deleted. devices = %@", devices);
+
+    // 値を指定して要素を削除
     [devices removeObject:@"PowerMac"];
     NSLog(@"PowerMac deleted. devices = %@", devices);
     
+    // インデックスを指定して要素を取得
     NSUInteger index = [devices indexOfObject:@"Newton"];
     NSLog(@"newton is at index: %d", index);
     index = [devices indexOfObject:@"iPad"];
     NSLog(@"iPad is at index: %d", index);
 
+    // containsObjectを使って要素が存在するか確認
     BOOL isFound = [devices containsObject:@"iPhone"];
     if (isFound) {
         NSLog(@"iPhone is contained!");
     } else {
         NSLog(@"iPhone is not contained...");
     }
+    
+    
+    
 }
 @end
