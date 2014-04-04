@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *catField;
 @property (weak, nonatomic) IBOutlet UILabel *humanLabel;
+- (IBAction)bkgTapped:(id)sender;
 - (double)catAgeToHumanAge:(double)catAge;
 @end
 
@@ -32,6 +33,9 @@
     double catAge = [_catField.text doubleValue];
     double humanAge = [self catAgeToHumanAge:catAge];
     _humanLabel.text = [NSString stringWithFormat:@"%.1f 歳", humanAge];
+}
+
+- (IBAction)bkgTapped:(id)sender {
 }
 
 - (double)catAgeToHumanAge:(double)catAge
