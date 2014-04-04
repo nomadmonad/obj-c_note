@@ -9,7 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *catField;
+@property (weak, nonatomic) IBOutlet UILabel *humanLabel;
+- (IBAction)calc:(id)sender;
+- (double)catAgeToHumanAge:(double)catAge;
 @end
 
 @implementation ViewController
@@ -26,4 +29,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calc:(id)sender {
+}
+
+- (double)catAgeToHumanAge:(double)catAge
+{
+    return NAN;
+}
 @end
