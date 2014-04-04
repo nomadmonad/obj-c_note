@@ -51,4 +51,14 @@
     }
     return humanAge;
 }
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSMutableString *tmp = [_catField.text mutableCopy];
+    [tmp replaceCharactersInRange:range withString:string];
+    bool isAgeLimit = [tmp doubleValue] <= 100;
+    bool isLengthLimit = [tmp length] <= 4
+    
+    return isAgeLimit && isLengthLimit;
+}
 @end
