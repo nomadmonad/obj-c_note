@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+- (IBAction)touchWordButton:(UIButton *)sender;
 
 @end
 
@@ -26,4 +28,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)touchWordButton:(UIButton *)sender {
+    NSString *word;
+    switch (sender.tag) {
+        case 10:
+            word = @"flower";
+            break;
+        case 11:
+            word = @"bird";
+            break;
+        case 12:
+            word = @"wind";
+            break;
+        case 13:
+            word = @"moon";
+            break;
+        default:
+            break;
+    }
+    _wordLabel.text = word;
+}
 @end
