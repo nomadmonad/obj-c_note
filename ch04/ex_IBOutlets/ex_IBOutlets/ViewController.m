@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *myTextField;
 
 @end
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _myTextField.text = @"ありがとう";
+    _myTextField.textColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning
