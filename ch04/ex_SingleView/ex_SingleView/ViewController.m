@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *name = [self fullName:@"西浜" lastname:@"波子"];
+    NSLog(@"Full name is %@", name);
+    
+    [self countUp];
+    [self countUp];
+    [self countUp];
+    NSLog(@"Counter is ... %d", _counter);
 }
 
 - (void)didReceiveMemoryWarning
