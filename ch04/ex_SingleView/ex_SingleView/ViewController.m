@@ -28,12 +28,13 @@
 
 - (NSString *)fullName:(NSString *)sei lastname:(NSString *)mei
 {
-    return NULL;
+    NSString *sei_mei = [NSString stringWithFormat:@"%@ %@", sei, mei];
+    return sei_mei;
 }
 
-- (void)countup
+- (void)countUp
 {
-    
+    _counter++;
 }
 
 @end

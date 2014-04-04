@@ -12,5 +12,5 @@
 @property (assign) NSInteger counter;
 
 - (NSString *)fullName: (NSString *)sei lastname:(NSString *)mei;
-- (void)countup;
+- (void)countUp;
 @end
