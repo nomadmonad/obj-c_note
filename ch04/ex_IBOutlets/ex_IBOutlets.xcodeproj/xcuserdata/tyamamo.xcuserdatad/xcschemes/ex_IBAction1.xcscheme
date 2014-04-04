@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DF6D64218EE509C00C87F86"
-               BuildableName = "ex_IBOutlets.app"
-               BlueprintName = "ex_IBOutlets"
+               BlueprintIdentifier = "8DF6D68118EE525000C87F86"
+               BuildableName = "ex_IBAction1.app"
+               BlueprintName = "ex_IBAction1"
                ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DF6D66618EE509C00C87F86"
-               BuildableName = "ex_IBOutletsTests.xctest"
-               BlueprintName = "ex_IBOutletsTests"
-               ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DF6D6A018EE525000C87F86"
-               BuildableName = "ex_IBAction1Tests.xctest"
-               BlueprintName = "ex_IBAction1Tests"
-               ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF6D64218EE509C00C87F86"
-            BuildableName = "ex_IBOutlets.app"
-            BlueprintName = "ex_IBOutlets"
+            BlueprintIdentifier = "8DF6D68118EE525000C87F86"
+            BuildableName = "ex_IBAction1.app"
+            BlueprintName = "ex_IBAction1"
             ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF6D64218EE509C00C87F86"
-            BuildableName = "ex_IBOutlets.app"
-            BlueprintName = "ex_IBOutlets"
+            BlueprintIdentifier = "8DF6D68118EE525000C87F86"
+            BuildableName = "ex_IBAction1.app"
+            BlueprintName = "ex_IBAction1"
             ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF6D64218EE509C00C87F86"
-            BuildableName = "ex_IBOutlets.app"
-            BlueprintName = "ex_IBOutlets"
+            BlueprintIdentifier = "8DF6D68118EE525000C87F86"
+            BuildableName = "ex_IBAction1.app"
+            BlueprintName = "ex_IBAction1"
             ReferencedContainer = "container:ex_IBOutlets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

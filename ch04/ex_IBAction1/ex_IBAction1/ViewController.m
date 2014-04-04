@@ -29,5 +29,6 @@
 }
 
 - (IBAction)updateValue:(id)sender {
+    NSLog(@"%.1f %%", _mySlider.value * 100);
 }
 @end
