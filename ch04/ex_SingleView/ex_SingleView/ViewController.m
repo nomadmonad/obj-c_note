@@ -26,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSString *)fullName:(NSString *)sei lastname:(NSString *)mei
+{
+    return NULL;
+}
+
+- (void)countup
+{
+    
+}
+
 @end

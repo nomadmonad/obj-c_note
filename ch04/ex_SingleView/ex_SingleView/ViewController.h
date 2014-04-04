@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (assign) NSInteger counter;
 
+- (NSString *)fullName: (NSString *)sei lastname:(NSString *)mei;
+- (void)countup;
 @end
