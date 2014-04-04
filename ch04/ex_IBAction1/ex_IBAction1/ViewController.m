@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-- (IBAction)updateValue:(UISlider *)sender;
 
 @end
 
@@ -19,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _valueLabel.text = @"";
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,6 +28,6 @@
 }
 
 - (IBAction)updateValue:(UISlider *)sender {
-    NSLog(@"%.1f %%", sender.value * 100);
+    _valueLabel.text = [NSString stringWithFormat:@"%.2f", sender.value];
 }
 @end
