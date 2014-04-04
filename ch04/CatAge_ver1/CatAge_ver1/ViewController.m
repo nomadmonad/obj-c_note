@@ -36,6 +36,7 @@
 }
 
 - (IBAction)bkgTapped:(id)sender {
+    [self.view endEditing:YES];
 }
 
 - (double)catAgeToHumanAge:(double)catAge
@@ -61,7 +62,7 @@
     NSMutableString *tmp = [_catField.text mutableCopy];
     [tmp replaceCharactersInRange:range withString:string];
     bool isAgeLimit = [tmp doubleValue] <= 100;
-    bool isLengthLimit = [tmp length] <= 4
+    bool isLengthLimit = [tmp length] <= 4;
     
     return isAgeLimit && isLengthLimit;
 }
