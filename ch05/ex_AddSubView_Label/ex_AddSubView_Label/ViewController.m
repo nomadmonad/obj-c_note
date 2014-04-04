@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *myLabel;
+- (IBAction)removeAddLabel:(id)sender;
 
 @end
 
@@ -18,13 +20,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 200, 30)];
-    myLabel.text = @"今日もいい天気";
-    myLabel.textAlignment = NSTextAlignmentCenter;
-    myLabel.textColor = [UIColor whiteColor];
-    myLabel.backgroundColor = [UIColor orangeColor];
+    UILabel *weatherLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 100, 200, 30)];
+    weatherLabel.text = @"今日もいい天気";
+    weatherLabel.textAlignment = NSTextAlignmentCenter;
+    weatherLabel.textColor = [UIColor whiteColor];
+    weatherLabel.backgroundColor = [UIColor orangeColor];
     
-    [self.view addSubview:myLabel];
+    [self.view addSubview:weatherLabel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,4 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)removeAddLabel:(id)sender {
+    if ([_myLabel isDescendantOfView:self.view]) {
+        [_myLabel removeFromSuperview];
+    } else {
+        [self.view addSubview:_myLabel];
+    }
+}
 @end
