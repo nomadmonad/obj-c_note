@@ -21,6 +21,7 @@
 		8D6C79E418EE842900485AC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6C79C618EE842900485AC1 /* UIKit.framework */; };
 		8D6C79EC18EE842900485AC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D6C79EA18EE842900485AC1 /* InfoPlist.strings */; };
 		8D6C79EE18EE842900485AC1 /* ChoiceFoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C79ED18EE842900485AC1 /* ChoiceFoodTests.m */; };
+		8D6C79FC18EE851600485AC1 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C79FB18EE851600485AC1 /* Food.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8D6C79E918EE842900485AC1 /* ChoiceFoodTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChoiceFoodTests-Info.plist"; sourceTree = "<group>"; };
 		8D6C79EB18EE842900485AC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D6C79ED18EE842900485AC1 /* ChoiceFoodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoiceFoodTests.m; sourceTree = "<group>"; };
+		8D6C79FA18EE851600485AC1 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		8D6C79FB18EE851600485AC1 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				8D6C79D418EE842900485AC1 /* Main.storyboard */,
 				8D6C79D718EE842900485AC1 /* ViewController.h */,
 				8D6C79D818EE842900485AC1 /* ViewController.m */,
+				8D6C79FA18EE851600485AC1 /* Food.h */,
+				8D6C79FB18EE851600485AC1 /* Food.m */,
 				8D6C79DA18EE842900485AC1 /* Images.xcassets */,
 				8D6C79C918EE842900485AC1 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6C79D918EE842900485AC1 /* ViewController.m in Sources */,
+				8D6C79FC18EE851600485AC1 /* Food.m in Sources */,
 				8D6C79D318EE842900485AC1 /* AppDelegate.m in Sources */,
 				8D6C79CF18EE842900485AC1 /* main.m in Sources */,
 			);
