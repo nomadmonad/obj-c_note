@@ -34,6 +34,19 @@
 
 - (double)catAgeToHumanAge:(double)catAge
 {
-    return NAN;
+    double humanAge;
+    
+    if (catAge < 1) {
+        humanAge = 20 * catAge;
+    } else if (catAge <= 5) {
+        humanAge = catAge * 6 + 15;
+    } else if (catAge <= 10) {
+        humanAge = catAge * 5 + 20;
+    } else if (catAge <= 15) {
+        humanAge = catAge * 4 + 30;
+    } else {
+        humanAge = catAge * 3 + 45;
+    }
+    return humanAge;
 }
 @end
