@@ -20,15 +20,12 @@
                                 <rect key="frame" x="101" y="99" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="updateValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="S8w-fW-EDj"/>
+                                    <action selector="updateValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="eE0-aT-yca"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="mySlider" destination="NRE-Bq-d7F" id="Ta6-Bx-4Nw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
