@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *colorNames;
 @end
 
 @implementation ViewController
@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    for (UITextField *fld in _colorNames) {
+        fld.placeholder = @"好きな色は？";
+    }
 }
 
 - (void)didReceiveMemoryWarning
