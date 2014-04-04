@@ -28,6 +28,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)calc:(id)sender {
+    double catAge = [_catField.text doubleValue];
+    double humanAge = [self catAgeToHumanAge:catAge];
+    _humanLabel.text = [NSString stringWithFormat:@"%.1f 歳", humanAge];
+}
+
 - (double)catAgeToHumanAge:(double)catAge
 {
     double humanAge;
