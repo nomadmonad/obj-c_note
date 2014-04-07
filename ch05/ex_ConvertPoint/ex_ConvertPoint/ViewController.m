@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIView *field;
+@property (strong, nonatomic) IBOutlet UIImageView *tombo;
+@property (strong, nonatomic) IBOutlet UIImageView *ring;
+- (IBAction)catchTombo:(id)sender;
 
 @end
 
@@ -26,4 +30,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)catchTombo:(id)sender {
+    CGPoint pt = [self.view convertPoint:_tombo.center fromView:_field];
+    _ring.center = pt;
+}
 @end
