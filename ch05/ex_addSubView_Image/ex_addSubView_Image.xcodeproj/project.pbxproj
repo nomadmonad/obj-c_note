@@ -21,6 +21,7 @@
 		8D09620418F2324800FF39A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0961E618F2324800FF39A4 /* UIKit.framework */; };
 		8D09620C18F2324800FF39A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D09620A18F2324800FF39A4 /* InfoPlist.strings */; };
 		8D09620E18F2324800FF39A4 /* ex_addSubView_ImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D09620D18F2324800FF39A4 /* ex_addSubView_ImageTests.m */; };
+		8D09621818F2343000FF39A4 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D09621718F2343000FF39A4 /* flower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D09620918F2324800FF39A4 /* ex_addSubView_ImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_addSubView_ImageTests-Info.plist"; sourceTree = "<group>"; };
 		8D09620B18F2324800FF39A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D09620D18F2324800FF39A4 /* ex_addSubView_ImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_addSubView_ImageTests.m; sourceTree = "<group>"; };
+		8D09621718F2343000FF39A4 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				8D0961F718F2324800FF39A4 /* ViewController.h */,
 				8D0961F818F2324800FF39A4 /* ViewController.m */,
 				8D0961FA18F2324800FF39A4 /* Images.xcassets */,
+				8D09621718F2343000FF39A4 /* flower.png */,
 				8D0961E918F2324800FF39A4 /* Supporting Files */,
 			);
 			path = ex_addSubView_Image;
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D09621818F2343000FF39A4 /* flower.png in Resources */,
 				8D0961FB18F2324800FF39A4 /* Images.xcassets in Resources */,
 				8D0961ED18F2324800FF39A4 /* InfoPlist.strings in Resources */,
 				8D0961F618F2324800FF39A4 /* Main.storyboard in Resources */,
