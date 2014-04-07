@@ -16,19 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="shami4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sj1-w8-djd">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="shami4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sj1-w8-djd">
                                 <rect key="frame" x="26" y="196" width="268" height="176"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="Gkt-Bs-gVV"/>
+                                    <constraint firstAttribute="width" constant="268" id="IEt-sM-bCe"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm6-eA-YSE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm6-eA-YSE">
                                 <rect key="frame" x="26" y="167" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-wR-xjl">
+                                <rect key="frame" x="36" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIb-Dv-Ohc">
+                                <rect key="frame" x="227" y="522" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlr-uU-PGT">
+                                <rect key="frame" x="272" y="522" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Sj1-w8-djd" secondAttribute="centerX" id="7eB-4P-3DT"/>
+                            <constraint firstItem="Sj1-w8-djd" firstAttribute="top" secondItem="Wm6-eA-YSE" secondAttribute="bottom" constant="8" symbolic="YES" id="CEB-qC-uUm"/>
+                            <constraint firstAttribute="trailing" secondItem="Vlr-uU-PGT" secondAttribute="trailing" constant="26" id="DB2-cx-DvQ"/>
+                            <constraint firstAttribute="centerY" secondItem="Sj1-w8-djd" secondAttribute="centerY" id="I6p-jI-NSd"/>
+                            <constraint firstItem="T5L-wR-xjl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="36" id="TKg-yZ-bwq"/>
+                            <constraint firstItem="Wm6-eA-YSE" firstAttribute="leading" secondItem="Sj1-w8-djd" secondAttribute="leading" id="bV4-77-9se"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="T5L-wR-xjl" secondAttribute="bottom" constant="20" id="hpK-Jd-oWY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Vlr-uU-PGT" secondAttribute="bottom" constant="24" id="hrj-Q6-Kn7"/>
+                            <constraint firstItem="Vlr-uU-PGT" firstAttribute="leading" secondItem="JIb-Dv-Ohc" secondAttribute="trailing" constant="23" id="kjT-bb-aFV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JIb-Dv-Ohc" secondAttribute="bottom" constant="24" id="vTw-cK-1eI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
