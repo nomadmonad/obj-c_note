@@ -53,7 +53,7 @@
 		8D0965BF18F2780600FF39A4 /* ex_UIButton_imageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIButton_imageTests-Info.plist"; sourceTree = "<group>"; };
 		8D0965C118F2780600FF39A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D0965C318F2780600FF39A4 /* ex_UIButton_imageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIButton_imageTests.m; sourceTree = "<group>"; };
-		8D0965CD18F2781E00FF39A4 /* roundbtn */ = {isa = PBXFileReference; lastKnownFileType = file; name = roundbtn; path = "../../../../obj-c_note_sample/PART05/chapter5-3/ex_UIButton_image/ex_UIButton_image/roundbtn"; sourceTree = "<group>"; };
+		8D0965CE18F27C8D00FF39A4 /* roundbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roundbtn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 				8D0965AA18F2780600FF39A4 /* Main.storyboard */,
 				8D0965AD18F2780600FF39A4 /* ViewController.h */,
 				8D0965AE18F2780600FF39A4 /* ViewController.m */,
-				8D0965CD18F2781E00FF39A4 /* roundbtn */,
+				8D0965CE18F27C8D00FF39A4 /* roundbtn.png */,
 				8D0965B018F2780600FF39A4 /* Images.xcassets */,
 				8D09659F18F2780600FF39A4 /* Supporting Files */,
 			);
