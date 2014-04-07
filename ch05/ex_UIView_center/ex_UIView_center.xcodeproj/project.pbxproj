@@ -21,6 +21,7 @@
 		8D0963E718F24B0600FF39A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0963C918F24B0600FF39A4 /* UIKit.framework */; };
 		8D0963EF18F24B0600FF39A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963ED18F24B0600FF39A4 /* InfoPlist.strings */; };
 		8D0963F118F24B0600FF39A4 /* ex_UIView_centerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963F018F24B0600FF39A4 /* ex_UIView_centerTests.m */; };
+		8D0963FB18F24BBC00FF39A4 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963FA18F24BBC00FF39A4 /* flower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D0963EC18F24B0600FF39A4 /* ex_UIView_centerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIView_centerTests-Info.plist"; sourceTree = "<group>"; };
 		8D0963EE18F24B0600FF39A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D0963F018F24B0600FF39A4 /* ex_UIView_centerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIView_centerTests.m; sourceTree = "<group>"; };
+		8D0963FA18F24BBC00FF39A4 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8D0963D718F24B0600FF39A4 /* Main.storyboard */,
 				8D0963DA18F24B0600FF39A4 /* ViewController.h */,
 				8D0963DB18F24B0600FF39A4 /* ViewController.m */,
+				8D0963FA18F24BBC00FF39A4 /* flower.png */,
 				8D0963DD18F24B0600FF39A4 /* Images.xcassets */,
 				8D0963CC18F24B0600FF39A4 /* Supporting Files */,
 			);
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0963FB18F24BBC00FF39A4 /* flower.png in Resources */,
 				8D0963DE18F24B0600FF39A4 /* Images.xcassets in Resources */,
 				8D0963D018F24B0600FF39A4 /* InfoPlist.strings in Resources */,
 				8D0963D918F24B0600FF39A4 /* Main.storyboard in Resources */,

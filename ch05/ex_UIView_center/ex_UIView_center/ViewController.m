@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *flower;
+- (IBAction)move:(id)sender;
 
 @end
 
@@ -26,4 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)move:(id)sender {
+    _flower.center = CGPointMake(200, 100);
+}
 @end
