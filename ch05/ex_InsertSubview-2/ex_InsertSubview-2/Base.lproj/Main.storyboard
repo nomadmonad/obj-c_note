@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="dai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-fR-z57">
+                                <rect key="frame" x="20" y="27" width="227" height="185"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="circlewalk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dgC-JM-MJI">
+                                <rect key="frame" x="33" y="83" width="227" height="185"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="odawarajou.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Hzr-hw-2aJ">
+                                <rect key="frame" x="47" y="135" width="227" height="185"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="surfshop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xe8-E5-Ke3">
+                                <rect key="frame" x="73" y="202" width="227" height="185"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-2S-FTC">
+                                <rect key="frame" x="206" y="407" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="yFY-iN-vAn"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h9M-2S-FTC" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="407" id="Y92-qQ-RsW"/>
+                            <constraint firstItem="h9M-2S-FTC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="206" id="uNO-Td-Ttv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dai" destination="e4Z-fR-z57" id="vXP-lg-uaF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circlewalk.jpg" width="320" height="240"/>
+        <image name="dai.jpg" width="320" height="240"/>
+        <image name="odawarajou.jpg" width="320" height="240"/>
+        <image name="surfshop.jpg" width="320" height="240"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
