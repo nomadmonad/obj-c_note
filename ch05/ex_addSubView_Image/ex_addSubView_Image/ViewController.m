@@ -19,10 +19,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIImage *imageData = [UIImage imageNamed:@"flower.png"];
-    CGRect rect = CGRectMake(0, 0, 200, 200);
+    CGRect rect = CGRectMake(0, 0, 100, 100);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.image = imageData;
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.contentMode = UIViewContentModeTopLeft;
+    imageView.clipsToBounds = YES;
     imageView.center = self.view.center;
     
     [self.view addSubview:imageView];
