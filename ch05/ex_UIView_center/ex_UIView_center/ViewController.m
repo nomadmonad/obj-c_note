@@ -29,6 +29,8 @@
 }
 
 - (IBAction)move:(id)sender {
-    _flower.center = CGPointMake(200, 100);
+    CGPoint pt = _flower.center;
+    pt.x += 10;
+    _flower.center = pt;
 }
 @end
