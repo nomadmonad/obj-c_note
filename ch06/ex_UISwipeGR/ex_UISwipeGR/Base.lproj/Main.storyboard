@@ -59,6 +59,16 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpR-06-7qG">
+                                        <rect key="frame" x="5" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeFrontView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vlr-ty-eKi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52941179275512695" green="0.80784314870834351" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -71,6 +81,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="coverButton" destination="dpR-06-7qG" id="0ff-jJ-Olh"/>
                         <outlet property="frontView" destination="nC1-aD-O90" id="kqM-h7-980"/>
                     </connections>
                 </viewController>
