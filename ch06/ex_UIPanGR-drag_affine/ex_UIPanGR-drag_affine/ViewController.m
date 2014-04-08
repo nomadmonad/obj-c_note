@@ -32,12 +32,11 @@
 }
 
 - (IBAction)dragging:(UIPanGestureRecognizer *)sender {
-    UIImageView *tombo = (UIImageView *)sender.view;
     CGPoint translation = [sender translationInView:self.view];
     if(sender.state == UIGestureRecognizerStateBegan) {
         [sender setTranslation:prevTranslation inView:self.view];
     } else if (sender.state == UIGestureRecognizerStateChanged) {
-        tombo.transform = CGAffineTransformMakeTranslation(translation.x, translation.y);
+        _tombo.transform = CGAffineTransformMakeTranslation(translation.x, translation.y);
     } else if (sender.state == UIGestureRecognizerStateEnded) {
         prevTranslation = translation;
     }
