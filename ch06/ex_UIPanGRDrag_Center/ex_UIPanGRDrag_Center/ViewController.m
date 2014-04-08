@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *tombo;
 - (IBAction)dragging:(UIPanGestureRecognizer *)sender;
 
 @end
@@ -28,6 +29,12 @@
 }
 
 - (IBAction)dragging:(UIPanGestureRecognizer *)sender {
-    
+    CGPoint translation = [sender translationInView:self.view];
+    CGPoint homeloc = _tombo.center;
+    homeloc.x += translation.x;
+    homeloc.y += translation.y;
+    _tombo.center = homeloc;
+    [sender setTranslation:CGPointZero inView:self.view];
+    translation = [sender translationInView:self.view];
 }
 @end
