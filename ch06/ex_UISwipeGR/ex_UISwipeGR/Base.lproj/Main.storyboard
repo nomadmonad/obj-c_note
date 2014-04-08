@@ -44,19 +44,53 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nC1-aD-O90">
+                                <rect key="frame" x="-5" y="0.0" width="325" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="shami4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="04Y-hf-KWR">
+                                        <rect key="frame" x="5" y="115" width="320" height="213"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh2-5t-zVC">
+                                        <rect key="frame" x="25" y="336" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52941179275512695" green="0.80784314870834351" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="Xv9-Cx-ndc" appends="YES" id="6ir-n6-FdY"/>
+                            <outletCollection property="gestureRecognizers" destination="sph-bk-rYt" appends="YES" id="RBY-qm-q8O"/>
+                            <outletCollection property="gestureRecognizers" destination="Of9-Jf-ZkB" appends="YES" id="gcO-bX-Y1S"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="frontView" destination="nC1-aD-O90" id="kqM-h7-980"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Xv9-Cx-ndc" userLabel="Swipe Right Gesture Recognizer"/>
+                <swipeGestureRecognizer direction="right" id="sph-bk-rYt" userLabel="Swipe Right Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeView:" destination="vXZ-lx-hvc" id="79o-55-Ut1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Of9-Jf-ZkB" userLabel="Swipe Left Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeView:" destination="vXZ-lx-hvc" id="854-xG-hJZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="shami4.jpg" width="320" height="213"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

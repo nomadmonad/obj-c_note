@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+- (IBAction)swipeView:(UISwipeGestureRecognizer *)sender;
+@property (strong, nonatomic) IBOutlet UIView *frontView;
 @end
 
 @implementation ViewController
@@ -26,4 +28,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)swipeView:(UISwipeGestureRecognizer *)sender {
+    CGPoint location = _frontView.center;
+    CGFloat center_x = self.view.center.x;
+    
+    if (sender.direction == UISwipeGestureRecognizerDirectionRight) {
+        location.x = center_x + 120;
+    } else if (sender.direction == UISwipeGestureRecognizerDirectionLeft) {
+        location.x = center_x;
+    }
+    
+    [UIView animateWithDuration:0.5
+                     animations:^{
+                         _frontView.center = location;
+                     }];
+}
 @end
