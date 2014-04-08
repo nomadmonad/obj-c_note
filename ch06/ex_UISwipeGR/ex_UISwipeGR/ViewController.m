@@ -33,10 +33,8 @@
 
 - (IBAction)closeFrontView:(UIButton *)sender {
     _coverButton.hidden = YES;
-    [UIView animateWithDuration:0.5
-                      animations:^{
-                          _frontView.center = CGPointMake(160, 284);
-                      }];
+    CGPoint location = CGPointMake(160, 284);
+    [self swipeViewAnimation:&location];
 }
 
 - (IBAction)swipeView:(UISwipeGestureRecognizer *)sender {
@@ -51,9 +49,14 @@
         _coverButton.hidden = YES;
     }
     
+    [self swipeViewAnimation:&location];
+}
+
+- (void)swipeViewAnimation:(CGPoint *)point
+{
     [UIView animateWithDuration:0.5
                      animations:^{
-                         _frontView.center = location;
+                         _frontView.center = *point;
                      }];
 }
 @end
