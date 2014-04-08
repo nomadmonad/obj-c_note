@@ -9,6 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    CGPoint prevTranslation;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *tombo;
+- (IBAction)dragging:(UIPanGestureRecognizer *)sender;
 
 @end
 
@@ -26,4 +31,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)dragging:(UIPanGestureRecognizer *)sender {
+    UIImageView *tombo = (UIImageView *)sender.view;
+    CGPoint translation = [sender translationInView:self.view];
+    if(sender.state == UIGestureRecognizerStateBegan) {
+        [sender setTranslation:prevTranslation inView:self.view];
+    } else if (sender.state == UIGestureRecognizerStateChanged) {
+        tombo.transform = CGAffineTransformMakeTranslation(translation.x, translation.y);
+    } else if (sender.state == UIGestureRecognizerStateEnded) {
+        prevTranslation = translation;
+    }
+}
 @end
