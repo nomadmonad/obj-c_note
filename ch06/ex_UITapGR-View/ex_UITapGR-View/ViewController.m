@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *tombo;
+- (IBAction)tapView:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -26,4 +28,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapView:(UITapGestureRecognizer *)sender {
+    CGPoint tapLoc = [sender locationInView:self.view];
+    _tombo.center = tapLoc;
+}
 @end
