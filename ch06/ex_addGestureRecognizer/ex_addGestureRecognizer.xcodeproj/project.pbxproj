@@ -21,6 +21,7 @@
 		8DCDE6BE18F4D1F700286339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6A018F4D1F700286339 /* UIKit.framework */; };
 		8DCDE6C618F4D1F700286339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE6C418F4D1F700286339 /* InfoPlist.strings */; };
 		8DCDE6C818F4D1F700286339 /* ex_addGestureRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDE6C718F4D1F700286339 /* ex_addGestureRecognizerTests.m */; };
+		8DCDE6D218F4D27300286339 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE6D118F4D27300286339 /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8DCDE6C318F4D1F700286339 /* ex_addGestureRecognizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_addGestureRecognizerTests-Info.plist"; sourceTree = "<group>"; };
 		8DCDE6C518F4D1F700286339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DCDE6C718F4D1F700286339 /* ex_addGestureRecognizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_addGestureRecognizerTests.m; sourceTree = "<group>"; };
+		8DCDE6D118F4D27300286339 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8DCDE6AE18F4D1F700286339 /* Main.storyboard */,
 				8DCDE6B118F4D1F700286339 /* ViewController.h */,
 				8DCDE6B218F4D1F700286339 /* ViewController.m */,
+				8DCDE6D118F4D27300286339 /* heart.png */,
 				8DCDE6B418F4D1F700286339 /* Images.xcassets */,
 				8DCDE6A318F4D1F700286339 /* Supporting Files */,
 			);
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCDE6D218F4D27300286339 /* heart.png in Resources */,
 				8DCDE6B518F4D1F700286339 /* Images.xcassets in Resources */,
 				8DCDE6A718F4D1F700286339 /* InfoPlist.strings in Resources */,
 				8DCDE6B018F4D1F700286339 /* Main.storyboard in Resources */,
