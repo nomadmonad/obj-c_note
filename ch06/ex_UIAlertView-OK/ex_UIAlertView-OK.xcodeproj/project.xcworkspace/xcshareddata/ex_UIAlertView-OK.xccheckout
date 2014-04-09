@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F707D0D6-87CA-43B6-9A85-58AE859801F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ex_UIAlertView-OK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D591E87-221B-436F-9E60-1E26BC449969</key>
+		<string>https://github.com/nomadmonad/obj-c_note.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch06/ex_UIAlertView-OK/ex_UIAlertView-OK.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D591E87-221B-436F-9E60-1E26BC449969</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nomadmonad/obj-c_note.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8D591E87-221B-436F-9E60-1E26BC449969</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D591E87-221B-436F-9E60-1E26BC449969</string>
+			<key>IDESourceControlWCCName</key>
+			<string>obj-c_note</string>
+		</dict>
+	</array>
+</dict>
+</plist>
