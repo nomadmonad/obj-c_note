@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DCDE6E018F4D52B00286339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6DF18F4D52B00286339 /* Foundation.framework */; };
+		8DCDE6E218F4D52B00286339 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6E118F4D52B00286339 /* CoreGraphics.framework */; };
+		8DCDE6E418F4D52B00286339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6E318F4D52B00286339 /* UIKit.framework */; };
+		8DCDE6EA18F4D52B00286339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE6E818F4D52B00286339 /* InfoPlist.strings */; };
+		8DCDE6EC18F4D52B00286339 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDE6EB18F4D52B00286339 /* main.m */; };
+		8DCDE6F018F4D52B00286339 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDE6EF18F4D52B00286339 /* AppDelegate.m */; };
+		8DCDE6F318F4D52B00286339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE6F118F4D52B00286339 /* Main.storyboard */; };
+		8DCDE6F618F4D52B00286339 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDE6F518F4D52B00286339 /* ViewController.m */; };
+		8DCDE6F818F4D52B00286339 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE6F718F4D52B00286339 /* Images.xcassets */; };
+		8DCDE6FF18F4D52B00286339 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6FE18F4D52B00286339 /* XCTest.framework */; };
+		8DCDE70018F4D52B00286339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6DF18F4D52B00286339 /* Foundation.framework */; };
+		8DCDE70118F4D52B00286339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCDE6E318F4D52B00286339 /* UIKit.framework */; };
+		8DCDE70918F4D52B00286339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCDE70718F4D52B00286339 /* InfoPlist.strings */; };
+		8DCDE70B18F4D52B00286339 /* ex_addGestureRecognizer_singleTapDoubleTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCDE70A18F4D52B00286339 /* ex_addGestureRecognizer_singleTapDoubleTapTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DCDE70218F4D52B00286339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DCDE6D418F4D52B00286339 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DCDE6DB18F4D52B00286339;
+			remoteInfo = "ex_addGestureRecognizer-singleTapDoubleTap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DCDE6DC18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ex_addGestureRecognizer-singleTapDoubleTap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCDE6DF18F4D52B00286339 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DCDE6E118F4D52B00286339 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8DCDE6E318F4D52B00286339 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8DCDE6E718F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_addGestureRecognizer-singleTapDoubleTap-Info.plist"; sourceTree = "<group>"; };
+		8DCDE6E918F4D52B00286339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DCDE6EB18F4D52B00286339 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DCDE6ED18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch"; sourceTree = "<group>"; };
+		8DCDE6EE18F4D52B00286339 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DCDE6EF18F4D52B00286339 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DCDE6F218F4D52B00286339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DCDE6F418F4D52B00286339 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8DCDE6F518F4D52B00286339 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DCDE6F718F4D52B00286339 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8DCDE6FD18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex_addGestureRecognizer-singleTapDoubleTapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCDE6FE18F4D52B00286339 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8DCDE70618F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_addGestureRecognizer-singleTapDoubleTapTests-Info.plist"; sourceTree = "<group>"; };
+		8DCDE70818F4D52B00286339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DCDE70A18F4D52B00286339 /* ex_addGestureRecognizer_singleTapDoubleTapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_addGestureRecognizer_singleTapDoubleTapTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DCDE6D918F4D52B00286339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE6E218F4D52B00286339 /* CoreGraphics.framework in Frameworks */,
+				8DCDE6E418F4D52B00286339 /* UIKit.framework in Frameworks */,
+				8DCDE6E018F4D52B00286339 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCDE6FA18F4D52B00286339 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE6FF18F4D52B00286339 /* XCTest.framework in Frameworks */,
+				8DCDE70118F4D52B00286339 /* UIKit.framework in Frameworks */,
+				8DCDE70018F4D52B00286339 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DCDE6D318F4D52B00286339 = {
+			isa = PBXGroup;
+			children = (
+				8DCDE6E518F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap */,
+				8DCDE70418F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests */,
+				8DCDE6DE18F4D52B00286339 /* Frameworks */,
+				8DCDE6DD18F4D52B00286339 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DCDE6DD18F4D52B00286339 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE6DC18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap.app */,
+				8DCDE6FD18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DCDE6DE18F4D52B00286339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE6DF18F4D52B00286339 /* Foundation.framework */,
+				8DCDE6E118F4D52B00286339 /* CoreGraphics.framework */,
+				8DCDE6E318F4D52B00286339 /* UIKit.framework */,
+				8DCDE6FE18F4D52B00286339 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DCDE6E518F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE6EE18F4D52B00286339 /* AppDelegate.h */,
+				8DCDE6EF18F4D52B00286339 /* AppDelegate.m */,
+				8DCDE6F118F4D52B00286339 /* Main.storyboard */,
+				8DCDE6F418F4D52B00286339 /* ViewController.h */,
+				8DCDE6F518F4D52B00286339 /* ViewController.m */,
+				8DCDE6F718F4D52B00286339 /* Images.xcassets */,
+				8DCDE6E618F4D52B00286339 /* Supporting Files */,
+			);
+			path = "ex_addGestureRecognizer-singleTapDoubleTap";
+			sourceTree = "<group>";
+		};
+		8DCDE6E618F4D52B00286339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE6E718F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap-Info.plist */,
+				8DCDE6E818F4D52B00286339 /* InfoPlist.strings */,
+				8DCDE6EB18F4D52B00286339 /* main.m */,
+				8DCDE6ED18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DCDE70418F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE70A18F4D52B00286339 /* ex_addGestureRecognizer_singleTapDoubleTapTests.m */,
+				8DCDE70518F4D52B00286339 /* Supporting Files */,
+			);
+			path = "ex_addGestureRecognizer-singleTapDoubleTapTests";
+			sourceTree = "<group>";
+		};
+		8DCDE70518F4D52B00286339 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DCDE70618F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests-Info.plist */,
+				8DCDE70718F4D52B00286339 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DCDE6DB18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCDE70E18F4D52B00286339 /* Build configuration list for PBXNativeTarget "ex_addGestureRecognizer-singleTapDoubleTap" */;
+			buildPhases = (
+				8DCDE6D818F4D52B00286339 /* Sources */,
+				8DCDE6D918F4D52B00286339 /* Frameworks */,
+				8DCDE6DA18F4D52B00286339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ex_addGestureRecognizer-singleTapDoubleTap";
+			productName = "ex_addGestureRecognizer-singleTapDoubleTap";
+			productReference = 8DCDE6DC18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DCDE6FC18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DCDE71118F4D52B00286339 /* Build configuration list for PBXNativeTarget "ex_addGestureRecognizer-singleTapDoubleTapTests" */;
+			buildPhases = (
+				8DCDE6F918F4D52B00286339 /* Sources */,
+				8DCDE6FA18F4D52B00286339 /* Frameworks */,
+				8DCDE6FB18F4D52B00286339 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DCDE70318F4D52B00286339 /* PBXTargetDependency */,
+			);
+			name = "ex_addGestureRecognizer-singleTapDoubleTapTests";
+			productName = "ex_addGestureRecognizer-singleTapDoubleTapTests";
+			productReference = 8DCDE6FD18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DCDE6D418F4D52B00286339 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8DCDE6FC18F4D52B00286339 = {
+						TestTargetID = 8DCDE6DB18F4D52B00286339;
+					};
+				};
+			};
+			buildConfigurationList = 8DCDE6D718F4D52B00286339 /* Build configuration list for PBXProject "ex_addGestureRecognizer-singleTapDoubleTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DCDE6D318F4D52B00286339;
+			productRefGroup = 8DCDE6DD18F4D52B00286339 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DCDE6DB18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap */,
+				8DCDE6FC18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DCDE6DA18F4D52B00286339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE6F818F4D52B00286339 /* Images.xcassets in Resources */,
+				8DCDE6EA18F4D52B00286339 /* InfoPlist.strings in Resources */,
+				8DCDE6F318F4D52B00286339 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCDE6FB18F4D52B00286339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE70918F4D52B00286339 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DCDE6D818F4D52B00286339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE6F618F4D52B00286339 /* ViewController.m in Sources */,
+				8DCDE6F018F4D52B00286339 /* AppDelegate.m in Sources */,
+				8DCDE6EC18F4D52B00286339 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DCDE6F918F4D52B00286339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCDE70B18F4D52B00286339 /* ex_addGestureRecognizer_singleTapDoubleTapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DCDE70318F4D52B00286339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DCDE6DB18F4D52B00286339 /* ex_addGestureRecognizer-singleTapDoubleTap */;
+			targetProxy = 8DCDE70218F4D52B00286339 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DCDE6E818F4D52B00286339 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCDE6E918F4D52B00286339 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8DCDE6F118F4D52B00286339 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCDE6F218F4D52B00286339 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DCDE70718F4D52B00286339 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCDE70818F4D52B00286339 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DCDE70C18F4D52B00286339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8DCDE70D18F4D52B00286339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DCDE70F18F4D52B00286339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch";
+				INFOPLIST_FILE = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8DCDE71018F4D52B00286339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch";
+				INFOPLIST_FILE = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8DCDE71218F4D52B00286339 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ex_addGestureRecognizer-singleTapDoubleTap.app/ex_addGestureRecognizer-singleTapDoubleTap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ex_addGestureRecognizer-singleTapDoubleTapTests/ex_addGestureRecognizer-singleTapDoubleTapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8DCDE71318F4D52B00286339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ex_addGestureRecognizer-singleTapDoubleTap.app/ex_addGestureRecognizer-singleTapDoubleTap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_addGestureRecognizer-singleTapDoubleTap/ex_addGestureRecognizer-singleTapDoubleTap-Prefix.pch";
+				INFOPLIST_FILE = "ex_addGestureRecognizer-singleTapDoubleTapTests/ex_addGestureRecognizer-singleTapDoubleTapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DCDE6D718F4D52B00286339 /* Build configuration list for PBXProject "ex_addGestureRecognizer-singleTapDoubleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCDE70C18F4D52B00286339 /* Debug */,
+				8DCDE70D18F4D52B00286339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DCDE70E18F4D52B00286339 /* Build configuration list for PBXNativeTarget "ex_addGestureRecognizer-singleTapDoubleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCDE70F18F4D52B00286339 /* Debug */,
+				8DCDE71018F4D52B00286339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8DCDE71118F4D52B00286339 /* Build configuration list for PBXNativeTarget "ex_addGestureRecognizer-singleTapDoubleTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DCDE71218F4D52B00286339 /* Debug */,
+				8DCDE71318F4D52B00286339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DCDE6D418F4D52B00286339 /* Project object */;
+}
