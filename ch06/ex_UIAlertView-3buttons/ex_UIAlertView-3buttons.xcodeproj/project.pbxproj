@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DB0767C18F62D0E002B4B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0767B18F62D0E002B4B1F /* Foundation.framework */; };
+		8DB0767E18F62D0E002B4B1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0767D18F62D0E002B4B1F /* CoreGraphics.framework */; };
+		8DB0768018F62D0E002B4B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0767F18F62D0E002B4B1F /* UIKit.framework */; };
+		8DB0768618F62D0E002B4B1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0768418F62D0E002B4B1F /* InfoPlist.strings */; };
+		8DB0768818F62D0E002B4B1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0768718F62D0E002B4B1F /* main.m */; };
+		8DB0768C18F62D0E002B4B1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0768B18F62D0E002B4B1F /* AppDelegate.m */; };
+		8DB0768F18F62D0E002B4B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0768D18F62D0E002B4B1F /* Main.storyboard */; };
+		8DB0769218F62D0E002B4B1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0769118F62D0E002B4B1F /* ViewController.m */; };
+		8DB0769418F62D0E002B4B1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0769318F62D0E002B4B1F /* Images.xcassets */; };
+		8DB0769B18F62D0E002B4B1F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0769A18F62D0E002B4B1F /* XCTest.framework */; };
+		8DB0769C18F62D0E002B4B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0767B18F62D0E002B4B1F /* Foundation.framework */; };
+		8DB0769D18F62D0E002B4B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0767F18F62D0E002B4B1F /* UIKit.framework */; };
+		8DB076A518F62D0E002B4B1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DB076A318F62D0E002B4B1F /* InfoPlist.strings */; };
+		8DB076A718F62D0E002B4B1F /* ex_UIAlertView_3buttonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB076A618F62D0E002B4B1F /* ex_UIAlertView_3buttonsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DB0769E18F62D0E002B4B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DB0767018F62D0E002B4B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DB0767718F62D0E002B4B1F;
+			remoteInfo = "ex_UIAlertView-3buttons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DB0767818F62D0E002B4B1F /* ex_UIAlertView-3buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ex_UIAlertView-3buttons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB0767B18F62D0E002B4B1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DB0767D18F62D0E002B4B1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8DB0767F18F62D0E002B4B1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8DB0768318F62D0E002B4B1F /* ex_UIAlertView-3buttons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIAlertView-3buttons-Info.plist"; sourceTree = "<group>"; };
+		8DB0768518F62D0E002B4B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DB0768718F62D0E002B4B1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DB0768918F62D0E002B4B1F /* ex_UIAlertView-3buttons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ex_UIAlertView-3buttons-Prefix.pch"; sourceTree = "<group>"; };
+		8DB0768A18F62D0E002B4B1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DB0768B18F62D0E002B4B1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DB0768E18F62D0E002B4B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DB0769018F62D0E002B4B1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8DB0769118F62D0E002B4B1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DB0769318F62D0E002B4B1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8DB0769918F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex_UIAlertView-3buttonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB0769A18F62D0E002B4B1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8DB076A218F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIAlertView-3buttonsTests-Info.plist"; sourceTree = "<group>"; };
+		8DB076A418F62D0E002B4B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8DB076A618F62D0E002B4B1F /* ex_UIAlertView_3buttonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIAlertView_3buttonsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DB0767518F62D0E002B4B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB0767E18F62D0E002B4B1F /* CoreGraphics.framework in Frameworks */,
+				8DB0768018F62D0E002B4B1F /* UIKit.framework in Frameworks */,
+				8DB0767C18F62D0E002B4B1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB0769618F62D0E002B4B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB0769B18F62D0E002B4B1F /* XCTest.framework in Frameworks */,
+				8DB0769D18F62D0E002B4B1F /* UIKit.framework in Frameworks */,
+				8DB0769C18F62D0E002B4B1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DB0766F18F62D0E002B4B1F = {
+			isa = PBXGroup;
+			children = (
+				8DB0768118F62D0E002B4B1F /* ex_UIAlertView-3buttons */,
+				8DB076A018F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests */,
+				8DB0767A18F62D0E002B4B1F /* Frameworks */,
+				8DB0767918F62D0E002B4B1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DB0767918F62D0E002B4B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0767818F62D0E002B4B1F /* ex_UIAlertView-3buttons.app */,
+				8DB0769918F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DB0767A18F62D0E002B4B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0767B18F62D0E002B4B1F /* Foundation.framework */,
+				8DB0767D18F62D0E002B4B1F /* CoreGraphics.framework */,
+				8DB0767F18F62D0E002B4B1F /* UIKit.framework */,
+				8DB0769A18F62D0E002B4B1F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DB0768118F62D0E002B4B1F /* ex_UIAlertView-3buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0768A18F62D0E002B4B1F /* AppDelegate.h */,
+				8DB0768B18F62D0E002B4B1F /* AppDelegate.m */,
+				8DB0768D18F62D0E002B4B1F /* Main.storyboard */,
+				8DB0769018F62D0E002B4B1F /* ViewController.h */,
+				8DB0769118F62D0E002B4B1F /* ViewController.m */,
+				8DB0769318F62D0E002B4B1F /* Images.xcassets */,
+				8DB0768218F62D0E002B4B1F /* Supporting Files */,
+			);
+			path = "ex_UIAlertView-3buttons";
+			sourceTree = "<group>";
+		};
+		8DB0768218F62D0E002B4B1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0768318F62D0E002B4B1F /* ex_UIAlertView-3buttons-Info.plist */,
+				8DB0768418F62D0E002B4B1F /* InfoPlist.strings */,
+				8DB0768718F62D0E002B4B1F /* main.m */,
+				8DB0768918F62D0E002B4B1F /* ex_UIAlertView-3buttons-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DB076A018F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DB076A618F62D0E002B4B1F /* ex_UIAlertView_3buttonsTests.m */,
+				8DB076A118F62D0E002B4B1F /* Supporting Files */,
+			);
+			path = "ex_UIAlertView-3buttonsTests";
+			sourceTree = "<group>";
+		};
+		8DB076A118F62D0E002B4B1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DB076A218F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests-Info.plist */,
+				8DB076A318F62D0E002B4B1F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DB0767718F62D0E002B4B1F /* ex_UIAlertView-3buttons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB076AA18F62D0E002B4B1F /* Build configuration list for PBXNativeTarget "ex_UIAlertView-3buttons" */;
+			buildPhases = (
+				8DB0767418F62D0E002B4B1F /* Sources */,
+				8DB0767518F62D0E002B4B1F /* Frameworks */,
+				8DB0767618F62D0E002B4B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ex_UIAlertView-3buttons";
+			productName = "ex_UIAlertView-3buttons";
+			productReference = 8DB0767818F62D0E002B4B1F /* ex_UIAlertView-3buttons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DB0769818F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DB076AD18F62D0E002B4B1F /* Build configuration list for PBXNativeTarget "ex_UIAlertView-3buttonsTests" */;
+			buildPhases = (
+				8DB0769518F62D0E002B4B1F /* Sources */,
+				8DB0769618F62D0E002B4B1F /* Frameworks */,
+				8DB0769718F62D0E002B4B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DB0769F18F62D0E002B4B1F /* PBXTargetDependency */,
+			);
+			name = "ex_UIAlertView-3buttonsTests";
+			productName = "ex_UIAlertView-3buttonsTests";
+			productReference = 8DB0769918F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DB0767018F62D0E002B4B1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					8DB0769818F62D0E002B4B1F = {
+						TestTargetID = 8DB0767718F62D0E002B4B1F;
+					};
+				};
+			};
+			buildConfigurationList = 8DB0767318F62D0E002B4B1F /* Build configuration list for PBXProject "ex_UIAlertView-3buttons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DB0766F18F62D0E002B4B1F;
+			productRefGroup = 8DB0767918F62D0E002B4B1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DB0767718F62D0E002B4B1F /* ex_UIAlertView-3buttons */,
+				8DB0769818F62D0E002B4B1F /* ex_UIAlertView-3buttonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DB0767618F62D0E002B4B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB0769418F62D0E002B4B1F /* Images.xcassets in Resources */,
+				8DB0768618F62D0E002B4B1F /* InfoPlist.strings in Resources */,
+				8DB0768F18F62D0E002B4B1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB0769718F62D0E002B4B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB076A518F62D0E002B4B1F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DB0767418F62D0E002B4B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB0769218F62D0E002B4B1F /* ViewController.m in Sources */,
+				8DB0768C18F62D0E002B4B1F /* AppDelegate.m in Sources */,
+				8DB0768818F62D0E002B4B1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DB0769518F62D0E002B4B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB076A718F62D0E002B4B1F /* ex_UIAlertView_3buttonsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DB0769F18F62D0E002B4B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DB0767718F62D0E002B4B1F /* ex_UIAlertView-3buttons */;
+			targetProxy = 8DB0769E18F62D0E002B4B1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DB0768418F62D0E002B4B1F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DB0768518F62D0E002B4B1F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8DB0768D18F62D0E002B4B1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DB0768E18F62D0E002B4B1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DB076A318F62D0E002B4B1F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DB076A418F62D0E002B4B1F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DB076A818F62D0E002B4B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8DB076A918F62D0E002B4B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DB076AB18F62D0E002B4B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Prefix.pch";
+				INFOPLIST_FILE = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8DB076AC18F62D0E002B4B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Prefix.pch";
+				INFOPLIST_FILE = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8DB076AE18F62D0E002B4B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ex_UIAlertView-3buttons.app/ex_UIAlertView-3buttons";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ex_UIAlertView-3buttonsTests/ex_UIAlertView-3buttonsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8DB076AF18F62D0E002B4B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ex_UIAlertView-3buttons.app/ex_UIAlertView-3buttons";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ex_UIAlertView-3buttons/ex_UIAlertView-3buttons-Prefix.pch";
+				INFOPLIST_FILE = "ex_UIAlertView-3buttonsTests/ex_UIAlertView-3buttonsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DB0767318F62D0E002B4B1F /* Build configuration list for PBXProject "ex_UIAlertView-3buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB076A818F62D0E002B4B1F /* Debug */,
+				8DB076A918F62D0E002B4B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DB076AA18F62D0E002B4B1F /* Build configuration list for PBXNativeTarget "ex_UIAlertView-3buttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB076AB18F62D0E002B4B1F /* Debug */,
+				8DB076AC18F62D0E002B4B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8DB076AD18F62D0E002B4B1F /* Build configuration list for PBXNativeTarget "ex_UIAlertView-3buttonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB076AE18F62D0E002B4B1F /* Debug */,
+				8DB076AF18F62D0E002B4B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DB0767018F62D0E002B4B1F /* Project object */;
+}

@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+- (IBAction)tapButton:(id)sender;
 @end
 
 @implementation ViewController
@@ -24,6 +25,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)tapButton:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"確認"
+                                                    message:@"実行する"
+                                                   delegate:self
+                                          cancelButtonTitle:@"キャンセル"
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        NSLog(@"cancelled.");
+    } else if (buttonIndex == 1) {
+        NSLog(@"confirmed.");
+    }
 }
 
 @end
