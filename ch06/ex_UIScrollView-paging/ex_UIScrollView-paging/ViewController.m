@@ -71,6 +71,7 @@
     CGFloat pageWidth = _myScrollView.frame.size.width;
     int pageNo = floor((_myScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     _myPageControl.currentPage = pageNo;
+    NSLog(@"page is: %d", pageNo);
 }
 
 @end
