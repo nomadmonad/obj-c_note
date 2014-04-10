@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *myTextfield;
 
 @end
 
@@ -18,12 +19,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _myTextfield.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return NO;
 }
 
 @end
