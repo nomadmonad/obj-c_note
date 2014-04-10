@@ -25,6 +25,7 @@
 		8DB0783C18F665E4002B4B1F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0783918F665E4002B4B1F /* house.png */; };
 		8DB0783D18F665E4002B4B1F /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0783A18F665E4002B4B1F /* tree.png */; };
 		8DB0783F18F66661002B4B1F /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0783E18F66661002B4B1F /* car.png */; };
+		8DB0784218F66730002B4B1F /* MyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0784118F66730002B4B1F /* MyPage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		8DB0783918F665E4002B4B1F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		8DB0783A18F665E4002B4B1F /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
 		8DB0783E18F66661002B4B1F /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		8DB0784018F66730002B4B1F /* MyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPage.h; sourceTree = "<group>"; };
+		8DB0784118F66730002B4B1F /* MyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				8DB0783A18F665E4002B4B1F /* tree.png */,
 				8DB0781B18F66566002B4B1F /* Images.xcassets */,
 				8DB0780A18F66566002B4B1F /* Supporting Files */,
+				8DB0784018F66730002B4B1F /* MyPage.h */,
+				8DB0784118F66730002B4B1F /* MyPage.m */,
 			);
 			path = "ex_UIScrollView-paging";
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				8DB0781A18F66566002B4B1F /* ViewController.m in Sources */,
 				8DB0781418F66566002B4B1F /* AppDelegate.m in Sources */,
+				8DB0784218F66730002B4B1F /* MyPage.m in Sources */,
 				8DB0781018F66566002B4B1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyPage.h"
 
-@interface ViewController : UIViewController 
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
 @end
