@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)tapButton:(id)sender;
 
 @end
 
@@ -26,4 +27,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapButton:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"パスワードを入力してください。"
+                                                    message:@"英数6文字以上です"
+                                                   delegate:self
+                                          cancelButtonTitle:@"キャンセル"
+                                          otherButtonTitles:@"OK", nil];
+    alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+    [alert show];
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        NSLog(@"Cancelled.");
+    } else if (buttonIndex == 1) {
+        UITextField *field = [alertView textFieldAtIndex:0];
+        NSLog(@"Inputted: %@", field.text);
+    }
+}
 @end
