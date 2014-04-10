@@ -34,6 +34,7 @@
                                           cancelButtonTitle:@"キャンセル"
                                           otherButtonTitles:@"OK", nil];
     alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+
     [alert show];
 }
 
