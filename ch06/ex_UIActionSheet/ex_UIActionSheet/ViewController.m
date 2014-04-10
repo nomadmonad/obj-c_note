@@ -31,7 +31,7 @@
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"コースを選んでください"
                                                        delegate:self
                                               cancelButtonTitle:@"Cancel"
-                                         destructiveButtonTitle:nil
+                                         destructiveButtonTitle:@"Cannot Undo"
                                               otherButtonTitles:@"Course A", @"Course B", @"Course C", nil];
     [sheet showInView:self.view];
 }
