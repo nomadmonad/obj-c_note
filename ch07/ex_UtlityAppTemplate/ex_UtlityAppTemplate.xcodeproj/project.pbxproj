@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D35BB0D18F777D30090446F /* run.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D35BB0C18F777D30090446F /* run.png */; };
 		8DB0791A18F68A4A002B4B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0791918F68A4A002B4B1F /* Foundation.framework */; };
 		8DB0791C18F68A4A002B4B1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0791B18F68A4A002B4B1F /* CoreGraphics.framework */; };
 		8DB0791E18F68A4A002B4B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB0791D18F68A4A002B4B1F /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D35BB0C18F777D30090446F /* run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run.png; sourceTree = "<group>"; };
 		8DB0791618F68A4A002B4B1F /* ex_UtlityAppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ex_UtlityAppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB0791918F68A4A002B4B1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8DB0791B18F68A4A002B4B1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +124,7 @@
 				8DB0792F18F68A4A002B4B1F /* MainViewController.m */,
 				8DB0793118F68A4A002B4B1F /* FlipsideViewController.h */,
 				8DB0793218F68A4A002B4B1F /* FlipsideViewController.m */,
+				8D35BB0C18F777D30090446F /* run.png */,
 				8DB0793418F68A4A002B4B1F /* Images.xcassets */,
 				8DB0792018F68A4A002B4B1F /* Supporting Files */,
 			);
@@ -236,6 +239,7 @@
 				8DB0793518F68A4A002B4B1F /* Images.xcassets in Resources */,
 				8DB0792418F68A4A002B4B1F /* InfoPlist.strings in Resources */,
 				8DB0792D18F68A4A002B4B1F /* Main.storyboard in Resources */,
+				8D35BB0D18F777D30090446F /* run.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +466,7 @@
 				8DB0794D18F68A4B002B4B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DB0794E18F68A4B002B4B1F /* Build configuration list for PBXNativeTarget "ex_UtlityAppTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +475,7 @@
 				8DB0795018F68A4B002B4B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
