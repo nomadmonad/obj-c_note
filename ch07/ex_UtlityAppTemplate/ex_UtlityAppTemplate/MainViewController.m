@@ -24,6 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    mainViewDic = [NSMutableDictionary dictionary];
     mainViewDic[@"user"] = @"未設定";
     mainViewDic [@"date"] = [NSDate date];
     mainViewDic[@"switch"] = @YES;
@@ -40,19 +41,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) configureView
-{
-    _messageLabel.text = [NSString stringWithFormat:@"こんにちは、%@さん", mainViewDic[@"user"]];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy年mm月dd日"];
-    _dateLabel.text = [formatter stringFromDate:mainViewDic[@"date"]];
-    
-    _myImage.hidden = ![mainViewDic[@"switch"] boolValue];
-}
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller configDic:(NSMutableDictionary *)dic
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+                              configDic:(NSMutableDictionary *)dic
 {
     
     if (mainViewDic == nil) {
@@ -67,7 +60,19 @@
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
+        [[segue destinationViewController] setConfigureDic:mainViewDic];
+
     }
+}
+
+- (void) configureView
+{
+    _messageLabel.text = [NSString stringWithFormat:@"こんにちは、%@さん", mainViewDic[@"user"]];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy年MM月dd日 HH:mm"];
+    _dateLabel.text = [formatter stringFromDate:mainViewDic[@"date"]];
+    
+    _myImage.hidden = ![mainViewDic[@"switch"] boolValue];
 }
 
 @end

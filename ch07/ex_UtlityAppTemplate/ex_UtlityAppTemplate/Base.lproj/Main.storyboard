@@ -35,14 +35,14 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-Oa-wv0">
-                                <rect key="frame" x="48" y="68" width="42" height="21"/>
+                                <rect key="frame" x="48" y="68" width="225" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiI-0q-rcF">
-                                <rect key="frame" x="48" y="158" width="42" height="21"/>
+                                <rect key="frame" x="48" y="158" width="225" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -161,11 +161,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="datePicker" destination="tMa-up-XAI" id="GFi-hP-Kis"/>
                         <outlet property="imageSwitch" destination="hze-Ez-PVo" id="Fp9-wj-bGa"/>
                         <outlet property="messageText" destination="iTA-mk-5bz" id="gfI-7W-bPw"/>
-                        <outlet property="tapView" destination="3qu-a5-DRH" id="F3Z-UF-Dp4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlJ-1o-FvB" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="3qu-a5-DRH"/>
+                <tapGestureRecognizer id="3qu-a5-DRH">
+                    <connections>
+                        <action selector="tapView:" destination="kIf-nA-PKG" id="HNx-QW-i9o"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="368" y="182"/>
         </scene>
