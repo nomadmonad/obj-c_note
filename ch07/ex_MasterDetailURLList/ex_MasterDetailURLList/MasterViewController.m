@@ -30,6 +30,17 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    NSDictionary *cell0 = @{@"site": @"Apple Japan", @"url":@"http://www.apple.com/jp"};
+    NSDictionary *cell1 = @{@"site": @"Apple Store Japan", @"url":@"http://store.apple.com/jp"};
+    NSDictionary *cell2 = @{@"site": @"Yahoo! Japan", @"url":@"http://www.yahoo.co.jp"};
+    NSDictionary *cell3 = @{@"site": @"THE NORTH FACE", @"url":@"http://www.thenorthface.com/en_US/index.html"};
+    NSDictionary *cell4 = @{@"site": @"Manchester United", @"url":@"http://www.manutd.jp"};
+
+    NSDictionary *section1 = @{@"header": @"List 1", @"data": @[cell0, cell1, cell2]};
+    NSDictionary *section2 = @{@"header": @"List 2", @"data": @[cell3, cell4]};
+    
+    tableDataList = @[section1, section2];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,21 +63,33 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [tableDataList count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    NSDictionary *theSection = tableDataList[section];
+    NSArray *theData = theSection[@"data"];
+    return theData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSDictionary *theSection = tableDataList[indexPath.section];
+    NSArray *theData = theSection[@"data"];
+    NSDictionary *theCell = theData[indexPath.row];
+    
+    cell.textLabel.text = theCell[@"site"];
+    cell.detailTextLabel.text = theCell[@"url"];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSDictionary *theSection = tableDataList[section];
+    return theSection[@"header"];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
