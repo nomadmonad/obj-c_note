@@ -128,8 +128,12 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        NSDictionary *theSection = tableDataList[indexPath.section];
+        NSArray *theData = theSection[@"data"];
+        NSDictionary *theCell = theData[indexPath.row];
+        
+        NSString * url = theCell[@"url"];
+        [[segue destinationViewController] setDetailItem:url];
     }
 }
 

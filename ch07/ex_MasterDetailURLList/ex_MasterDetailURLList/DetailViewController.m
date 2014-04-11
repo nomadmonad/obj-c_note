@@ -31,7 +31,9 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        
+        NSURL *url = [NSURL URLWithString:_detailItem];
+        NSURLRequest *urlReq = [NSURLRequest requestWithURL:url];
+        [_myWebView loadRequest:urlReq];
         
     }
 }
