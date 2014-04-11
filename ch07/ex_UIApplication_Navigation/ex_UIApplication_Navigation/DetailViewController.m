@@ -1,6 +1,6 @@
 //
 //  DetailViewController.m
-//  ex_MasterDetailURLList
+//  ex_UIApplication_Navigation
 //
 //  Created by tyamamo on 2014/04/11.
 //  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
@@ -31,9 +31,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        NSURL *url = [NSURL URLWithString:_detailItem];
-        UIApplication *app = [UIApplication sharedApplication];
-        [app openURL:url];
+        self.detailDescriptionLabel.text = [self.detailItem description];
     }
 }
 
