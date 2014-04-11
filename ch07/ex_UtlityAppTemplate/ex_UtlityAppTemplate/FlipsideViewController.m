@@ -9,6 +9,14 @@
 #import "FlipsideViewController.h"
 
 @interface FlipsideViewController ()
+{
+    NSMutableDictionary *flipSideDic;
+}
+
+@property (strong, nonatomic) IBOutlet UITextField *messageText;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong, nonatomic) IBOutlet UISwitch *imageSwitch;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapView;
 
 @end
 
@@ -30,7 +38,10 @@
 
 - (IBAction)done:(id)sender
 {
-    [self.delegate flipsideViewControllerDidFinish:self];
+    flipSideDic[@"user"] = _messageText.text;
+    flipSideDic[@"date"] = _datePicker.date;
+    flipSideDic[@"switch"] = @(_imageSwitch.on);
+    [self.delegate flipsideViewControllerDidFinish:self configDic:flipSideDic];
 }
 
 @end
