@@ -22,6 +22,8 @@
 		8DBCE74518FB6F9900A6EB4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBCE72418FB6F9900A6EB4D /* UIKit.framework */; };
 		8DBCE74D18FB6F9900A6EB4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCE74B18FB6F9900A6EB4D /* InfoPlist.strings */; };
 		8DBCE74F18FB6F9900A6EB4D /* ex_TabbedAppTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE74E18FB6F9900A6EB4D /* ex_TabbedAppTemplateTests.m */; };
+		8DBCE75A18FB707F00A6EB4D /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE75918FB707F00A6EB4D /* ThirdViewController.m */; };
+		8DBCE75C18FB712D00A6EB4D /* tree-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCE75B18FB712D00A6EB4D /* tree-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		8DBCE74A18FB6F9900A6EB4D /* ex_TabbedAppTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_TabbedAppTemplateTests-Info.plist"; sourceTree = "<group>"; };
 		8DBCE74C18FB6F9900A6EB4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DBCE74E18FB6F9900A6EB4D /* ex_TabbedAppTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_TabbedAppTemplateTests.m; sourceTree = "<group>"; };
+		8DBCE75818FB707F00A6EB4D /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		8DBCE75918FB707F00A6EB4D /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		8DBCE75B18FB712D00A6EB4D /* tree-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +123,13 @@
 				8DBCE72F18FB6F9900A6EB4D /* AppDelegate.h */,
 				8DBCE73018FB6F9900A6EB4D /* AppDelegate.m */,
 				8DBCE73218FB6F9900A6EB4D /* Main.storyboard */,
+				8DBCE75818FB707F00A6EB4D /* ThirdViewController.h */,
+				8DBCE75918FB707F00A6EB4D /* ThirdViewController.m */,
 				8DBCE73518FB6F9900A6EB4D /* FirstViewController.h */,
 				8DBCE73618FB6F9900A6EB4D /* FirstViewController.m */,
 				8DBCE73818FB6F9900A6EB4D /* SecondViewController.h */,
 				8DBCE73918FB6F9900A6EB4D /* SecondViewController.m */,
+				8DBCE75B18FB712D00A6EB4D /* tree-2.png */,
 				8DBCE73B18FB6F9900A6EB4D /* Images.xcassets */,
 				8DBCE72718FB6F9900A6EB4D /* Supporting Files */,
 			);
@@ -233,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBCE75C18FB712D00A6EB4D /* tree-2.png in Resources */,
 				8DBCE73C18FB6F9900A6EB4D /* Images.xcassets in Resources */,
 				8DBCE72B18FB6F9900A6EB4D /* InfoPlist.strings in Resources */,
 				8DBCE73418FB6F9900A6EB4D /* Main.storyboard in Resources */,
@@ -255,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DBCE73A18FB6F9900A6EB4D /* SecondViewController.m in Sources */,
+				8DBCE75A18FB707F00A6EB4D /* ThirdViewController.m in Sources */,
 				8DBCE73118FB6F9900A6EB4D /* AppDelegate.m in Sources */,
 				8DBCE73718FB6F9900A6EB4D /* FirstViewController.m in Sources */,
 				8DBCE72D18FB6F9900A6EB4D /* main.m in Sources */,
