@@ -35,8 +35,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSString *cell0 = @"Aコース";
-    NSString *cell1 = @"Bコース";
+    NSString *cell0 = @"海あそび";
+    NSString *cell1 = @"山あそび";
     
     cellList = @[cell0, cell1];
 

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Menu-->
+        <!--Root View Controller - Menu-->
         <scene sceneID="rio-fp-rOv">
             <objects>
-                <tableViewController id="nQU-8c-gXi" sceneMemberID="viewController">
+                <tableViewController id="nQU-8c-gXi" customClass="RootViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q1W-9n-qRv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-400" y="151"/>
         </scene>
-        <!--Table View Controller - Course A-->
+        <!--CourseA View Controller - Course A-->
         <scene sceneID="UM9-ta-1R7">
             <objects>
-                <tableViewController id="f2p-L6-OVS" sceneMemberID="viewController">
+                <tableViewController id="f2p-L6-OVS" customClass="CourseAViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1PS-2f-e0r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="170" y="-123"/>
         </scene>
-        <!--View Controller - SeaShore Activity-->
+        <!--Course Sea Shore View Controller - SeaShore Activity-->
         <scene sceneID="yIL-cm-AaW">
             <objects>
-                <viewController id="Sic-NN-wCe" sceneMemberID="viewController">
+                <viewController id="Sic-NN-wCe" customClass="CourseSeaShoreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T8X-o8-Y3k"/>
                         <viewControllerLayoutGuide type="bottom" id="XNR-2X-dfn"/>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-934" y="151"/>
         </scene>
-        <!--View Controller - Course B-->
+        <!--CourseB View Controller - Course B-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CourseBViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="170" y="678"/>
         </scene>
-        <!--View Controller - Mountain Activity-->
+        <!--Course Mountain View Controller - Mountain Activity-->
         <scene sceneID="wD8-YP-9XW">
             <objects>
-                <viewController id="o2u-6A-8TK" sceneMemberID="viewController">
+                <viewController id="o2u-6A-8TK" customClass="CourseMountainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IXU-FT-5Q5"/>
                         <viewControllerLayoutGuide type="bottom" id="YRy-Od-lYs"/>
