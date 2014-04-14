@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    CGRect originalFrame;
+}
 @property (strong, nonatomic) IBOutlet UITextView *myTextView;
 - (IBAction)editCancel:(id)sender;
 - (IBAction)editDone:(id)sender;
@@ -62,5 +65,19 @@
                        atomically:YES
                          encoding:NSUTF8StringEncoding
                             error:NULL];
+}
+
+- (void)keyboardDidShow:(NSNotification *)notification
+{
+    NSDictionary *infoDic = [notification userInfo];
+    CGRect keyBoardFrame = [infoDic[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect textViewFrame = _myTextView.frame;
+    textViewFrame.size.height = originalFrame.size.height - keyBoardFrame.size.height;
+    _myTextView.frame = textViewFrame;
+}
+
+- (void)keyboardDidHide:(NSNotification *)notification
+{
+    _myTextView.frame = originalFrame;
 }
 @end
