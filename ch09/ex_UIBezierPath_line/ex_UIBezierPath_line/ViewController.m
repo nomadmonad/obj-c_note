@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MyLine.h"
+#import "MyLine2.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,11 @@
     CGRect rect = CGRectMake(0, 0, 200, 200);
     MyLine *line = [[MyLine alloc] initWithFrame:rect];
     
+    CGRect rect2 = CGRectMake(0, 250, 250, 250);
+    MyLine2 *line2 = [[MyLine2 alloc] initWithFrame:rect2];
+    
     [self.view addSubview:line];
+    [self.view addSubview:line2];
 	
 }
 
