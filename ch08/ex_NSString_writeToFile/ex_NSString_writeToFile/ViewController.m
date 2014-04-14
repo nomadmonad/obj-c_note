@@ -25,6 +25,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self loadFile];
+    
+    NSNotificationCenter *notification = [NSNotificationCenter defaultCenter];
+    [notification addObserver:self
+                     selector:@selector(keyboardDidShow:)
+                         name:UIKeyboardDidShowNotification
+                       object:nil];
+    [notification addObserver:self
+                     selector:@selector(keyboardDidHide:)
+                         name:UIKeyboardDidHideNotification
+                       object:nil];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    originalFrame = _myTextView.frame;
 }
 
 - (void)didReceiveMemoryWarning
