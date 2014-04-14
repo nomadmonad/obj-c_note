@@ -20,6 +20,11 @@
 		8D48DE7718F7B6BF00E1E85C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48DE5918F7B6BF00E1E85C /* UIKit.framework */; };
 		8D48DE7F18F7B6BF00E1E85C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D48DE7D18F7B6BF00E1E85C /* InfoPlist.strings */; };
 		8D48DE8118F7B6BF00E1E85C /* ex_UITableView_navigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE8018F7B6BF00E1E85C /* ex_UITableView_navigationTests.m */; };
+		8D48DE8C18F7B98A00E1E85C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE8B18F7B98A00E1E85C /* RootViewController.m */; };
+		8D48DE8F18F7B9A900E1E85C /* CourseAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE8E18F7B9A900E1E85C /* CourseAViewController.m */; };
+		8D48DE9218F7B9C300E1E85C /* CourseBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE9118F7B9C300E1E85C /* CourseBViewController.m */; };
+		8D48DE9518F7B9DF00E1E85C /* CourseSeaShoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE9418F7B9DF00E1E85C /* CourseSeaShoreViewController.m */; };
+		8D48DE9818F7B9E800E1E85C /* CourseMountainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D48DE9718F7B9E800E1E85C /* CourseMountainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,16 @@
 		8D48DE7C18F7B6BF00E1E85C /* ex_UITableView_navigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UITableView_navigationTests-Info.plist"; sourceTree = "<group>"; };
 		8D48DE7E18F7B6BF00E1E85C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D48DE8018F7B6BF00E1E85C /* ex_UITableView_navigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UITableView_navigationTests.m; sourceTree = "<group>"; };
+		8D48DE8A18F7B98A00E1E85C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8D48DE8B18F7B98A00E1E85C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8D48DE8D18F7B9A900E1E85C /* CourseAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseAViewController.h; sourceTree = "<group>"; };
+		8D48DE8E18F7B9A900E1E85C /* CourseAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseAViewController.m; sourceTree = "<group>"; };
+		8D48DE9018F7B9C300E1E85C /* CourseBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseBViewController.h; sourceTree = "<group>"; };
+		8D48DE9118F7B9C300E1E85C /* CourseBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseBViewController.m; sourceTree = "<group>"; };
+		8D48DE9318F7B9DF00E1E85C /* CourseSeaShoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSeaShoreViewController.h; sourceTree = "<group>"; };
+		8D48DE9418F7B9DF00E1E85C /* CourseSeaShoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseSeaShoreViewController.m; sourceTree = "<group>"; };
+		8D48DE9618F7B9E800E1E85C /* CourseMountainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseMountainViewController.h; sourceTree = "<group>"; };
+		8D48DE9718F7B9E800E1E85C /* CourseMountainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseMountainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +129,16 @@
 				8D48DE6718F7B6BF00E1E85C /* Main.storyboard */,
 				8D48DE6D18F7B6BF00E1E85C /* Images.xcassets */,
 				8D48DE5C18F7B6BF00E1E85C /* Supporting Files */,
+				8D48DE8A18F7B98A00E1E85C /* RootViewController.h */,
+				8D48DE8B18F7B98A00E1E85C /* RootViewController.m */,
+				8D48DE8D18F7B9A900E1E85C /* CourseAViewController.h */,
+				8D48DE8E18F7B9A900E1E85C /* CourseAViewController.m */,
+				8D48DE9018F7B9C300E1E85C /* CourseBViewController.h */,
+				8D48DE9118F7B9C300E1E85C /* CourseBViewController.m */,
+				8D48DE9318F7B9DF00E1E85C /* CourseSeaShoreViewController.h */,
+				8D48DE9418F7B9DF00E1E85C /* CourseSeaShoreViewController.m */,
+				8D48DE9618F7B9E800E1E85C /* CourseMountainViewController.h */,
+				8D48DE9718F7B9E800E1E85C /* CourseMountainViewController.m */,
 			);
 			path = ex_UITableView_navigation;
 			sourceTree = "<group>";
@@ -245,7 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D48DE6618F7B6BF00E1E85C /* AppDelegate.m in Sources */,
+				8D48DE9818F7B9E800E1E85C /* CourseMountainViewController.m in Sources */,
 				8D48DE6218F7B6BF00E1E85C /* main.m in Sources */,
+				8D48DE8C18F7B98A00E1E85C /* RootViewController.m in Sources */,
+				8D48DE9218F7B9C300E1E85C /* CourseBViewController.m in Sources */,
+				8D48DE8F18F7B9A900E1E85C /* CourseAViewController.m in Sources */,
+				8D48DE9518F7B9DF00E1E85C /* CourseSeaShoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
