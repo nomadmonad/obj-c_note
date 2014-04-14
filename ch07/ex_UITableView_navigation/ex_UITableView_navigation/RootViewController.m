@@ -130,4 +130,9 @@
     
 }
 
+- (IBAction)rootViewUnwindSegue:(UIStoryboardSegue *)segue
+{
+    NSLog(@"Exitで戻る %@", segue.identifier);
+}
+
 @end

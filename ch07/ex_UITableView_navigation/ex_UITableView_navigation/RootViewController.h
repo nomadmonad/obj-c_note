@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController
-
+- (IBAction)rootViewUnwindSegue:(UIStoryboardSegue *)segue;
 @end
