@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyView.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+	CGRect theFrame = CGRectMake(50, 50, 200, 200);
+    MyView *myView = [[MyView alloc] initWithFrame:theFrame];
+    
+    myView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:myView];
 }
 
 - (void)didReceiveMemoryWarning
