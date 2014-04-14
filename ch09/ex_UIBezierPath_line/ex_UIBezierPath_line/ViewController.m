@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyLine.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    CGRect rect = CGRectMake(0, 0, 200, 200);
+    MyLine *line = [[MyLine alloc] initWithFrame:rect];
+    
+    [self.view addSubview:line];
+	
 }
 
 - (void)didReceiveMemoryWarning

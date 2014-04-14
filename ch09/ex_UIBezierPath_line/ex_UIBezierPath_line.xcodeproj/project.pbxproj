@@ -21,6 +21,7 @@
 		8DBCE89518FBC0FD00A6EB4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBCE87718FBC0FD00A6EB4D /* UIKit.framework */; };
 		8DBCE89D18FBC0FD00A6EB4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCE89B18FBC0FD00A6EB4D /* InfoPlist.strings */; };
 		8DBCE89F18FBC0FD00A6EB4D /* ex_UIBezierPath_lineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE89E18FBC0FD00A6EB4D /* ex_UIBezierPath_lineTests.m */; };
+		8DBCE8AA18FBC14700A6EB4D /* MyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE8A918FBC14700A6EB4D /* MyLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8DBCE89A18FBC0FD00A6EB4D /* ex_UIBezierPath_lineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIBezierPath_lineTests-Info.plist"; sourceTree = "<group>"; };
 		8DBCE89C18FBC0FD00A6EB4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DBCE89E18FBC0FD00A6EB4D /* ex_UIBezierPath_lineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIBezierPath_lineTests.m; sourceTree = "<group>"; };
+		8DBCE8A818FBC14700A6EB4D /* MyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLine.h; sourceTree = "<group>"; };
+		8DBCE8A918FBC14700A6EB4D /* MyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				8DBCE88518FBC0FD00A6EB4D /* Main.storyboard */,
 				8DBCE88818FBC0FD00A6EB4D /* ViewController.h */,
 				8DBCE88918FBC0FD00A6EB4D /* ViewController.m */,
+				8DBCE8A818FBC14700A6EB4D /* MyLine.h */,
+				8DBCE8A918FBC14700A6EB4D /* MyLine.m */,
 				8DBCE88B18FBC0FD00A6EB4D /* Images.xcassets */,
 				8DBCE87A18FBC0FD00A6EB4D /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DBCE88A18FBC0FD00A6EB4D /* ViewController.m in Sources */,
+				8DBCE8AA18FBC14700A6EB4D /* MyLine.m in Sources */,
 				8DBCE88418FBC0FD00A6EB4D /* AppDelegate.m in Sources */,
 				8DBCE88018FBC0FD00A6EB4D /* main.m in Sources */,
 			);
