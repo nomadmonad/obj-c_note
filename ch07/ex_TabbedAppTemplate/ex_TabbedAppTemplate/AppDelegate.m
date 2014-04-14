@@ -8,14 +8,44 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate ()
+@property (nonatomic, strong) UITabBarController *myTabBarController;
+
+@end
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    _myTabBarController = (UITabBarController *)_window.rootViewController;
+    _myTabBarController.delegate = self;
+    
+    UITabBarItem *myTabBarItem = _myTabBarController.tabBar.items[2];
+    myTabBarItem.badgeValue = @"5";
+    
+    NSLog((@"ビューコントローラの配列 %@"), _myTabBarController.viewControllers);
+    
     return YES;
 }
-							
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    NSLog((@"切り替え前のインデックス: %d"), tabBarController.selectedIndex);
+    NSLog(@"切り替え先のViewController %@", viewController);
+    
+    return YES;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (tabBarController.selectedIndex == 2) {
+        UITabBarItem *myTabBarItem = tabBarController.tabBar.items[2];
+        myTabBarItem.badgeValue = nil;
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
