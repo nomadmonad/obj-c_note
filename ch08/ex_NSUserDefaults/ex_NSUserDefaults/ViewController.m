@@ -21,6 +21,16 @@
 
 @implementation ViewController
 
++ (void)initialize
+{
+    NSMutableDictionary *appDefaults = [[NSMutableDictionary alloc] init];
+    [appDefaults setValue:@"0.75" forKey:@"sliderValue"];
+    [appDefaults setValue:@"YES" forKey:@"switchValue"];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults registerDefaults:appDefaults];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
