@@ -28,7 +28,7 @@
     
     drawPath.lineWidth = 20;
     drawPath.lineCapStyle = kCGLineCapRound;
-    drawPath.lineJoinStyle = kCGLineJoinBevel;
+    drawPath.lineJoinStyle = kCGLineJoinMiter;
     
     [drawPath moveToPoint:CGPointMake(100, 50)];
     [drawPath addLineToPoint:CGPointMake(150, 100)];
