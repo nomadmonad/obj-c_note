@@ -25,6 +25,9 @@
     UITabBarItem *myTabBarItem = _myTabBarController.tabBar.items[2];
     myTabBarItem.badgeValue = @"5";
     
+    myTabBarItem = _myTabBarController.tabBar.items[1];
+    myTabBarItem.badgeValue = @"danger";
+    
     NSLog((@"ビューコントローラの配列 %@"), _myTabBarController.viewControllers);
     
     return YES;
@@ -40,8 +43,12 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    UITabBarItem *myTabBarItem;
     if (tabBarController.selectedIndex == 2) {
-        UITabBarItem *myTabBarItem = tabBarController.tabBar.items[2];
+        myTabBarItem = tabBarController.tabBar.items[2];
+        myTabBarItem.badgeValue = nil;
+    } else if (tabBarController.selectedIndex == 1) {
+        myTabBarItem = tabBarController.tabBar.items[1];
         myTabBarItem.badgeValue = nil;
     }
 }
