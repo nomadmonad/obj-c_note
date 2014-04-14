@@ -21,6 +21,7 @@
 		8DBCE80D18FBB69000A6EB4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBCE7EF18FBB69000A6EB4D /* UIKit.framework */; };
 		8DBCE81518FBB69000A6EB4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCE81318FBB69000A6EB4D /* InfoPlist.strings */; };
 		8DBCE81718FBB69000A6EB4D /* ex_UIBazierPath_rectangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE81618FBB69000A6EB4D /* ex_UIBazierPath_rectangleTests.m */; };
+		8DBCE82218FBB6C200A6EB4D /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE82118FBB6C200A6EB4D /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8DBCE81218FBB69000A6EB4D /* ex_UIBazierPath_rectangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIBazierPath_rectangleTests-Info.plist"; sourceTree = "<group>"; };
 		8DBCE81418FBB69000A6EB4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DBCE81618FBB69000A6EB4D /* ex_UIBazierPath_rectangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIBazierPath_rectangleTests.m; sourceTree = "<group>"; };
+		8DBCE82018FBB6C200A6EB4D /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = ../MyView.h; sourceTree = "<group>"; };
+		8DBCE82118FBB6C200A6EB4D /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = ../MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		8DBCE7F118FBB69000A6EB4D /* ex_UIBazierPath_rectangle */ = {
 			isa = PBXGroup;
 			children = (
+				8DBCE82018FBB6C200A6EB4D /* MyView.h */,
+				8DBCE82118FBB6C200A6EB4D /* MyView.m */,
 				8DBCE7FA18FBB69000A6EB4D /* AppDelegate.h */,
 				8DBCE7FB18FBB69000A6EB4D /* AppDelegate.m */,
 				8DBCE7FD18FBB69000A6EB4D /* Main.storyboard */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBCE82218FBB6C200A6EB4D /* MyView.m in Sources */,
 				8DBCE80218FBB69000A6EB4D /* ViewController.m in Sources */,
 				8DBCE7FC18FBB69000A6EB4D /* AppDelegate.m in Sources */,
 				8DBCE7F818FBB69000A6EB4D /* main.m in Sources */,
