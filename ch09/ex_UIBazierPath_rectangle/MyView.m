@@ -12,6 +12,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
+    NSLog(@"initWithFrame@MyView");
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
@@ -21,9 +22,10 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    NSLog(@"drawRect@myView");
     CGRect theRect = CGRectMake(20, 50, 100, 120);
     UIBezierPath *drawPath = [UIBezierPath bezierPathWithRect:theRect];
-    [drawPath stroke];
+    [drawPath fill];
 }
 
 

@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad@ViewController");
     [super viewDidLoad];
 
 	CGRect theFrame = CGRectMake(50, 50, 200, 200);
