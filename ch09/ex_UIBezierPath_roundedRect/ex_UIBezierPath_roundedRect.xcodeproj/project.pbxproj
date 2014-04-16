@@ -21,6 +21,7 @@
 		8D7FF58B18FE5B5B00EDBF95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7FF56D18FE5B5B00EDBF95 /* UIKit.framework */; };
 		8D7FF59318FE5B5B00EDBF95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7FF59118FE5B5B00EDBF95 /* InfoPlist.strings */; };
 		8D7FF59518FE5B5B00EDBF95 /* ex_UIBezierPath_roundedRectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FF59418FE5B5B00EDBF95 /* ex_UIBezierPath_roundedRectTests.m */; };
+		8D7FF5A018FE5C3A00EDBF95 /* MyRoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FF59F18FE5C3A00EDBF95 /* MyRoundRect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8D7FF59018FE5B5B00EDBF95 /* ex_UIBezierPath_roundedRectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIBezierPath_roundedRectTests-Info.plist"; sourceTree = "<group>"; };
 		8D7FF59218FE5B5B00EDBF95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7FF59418FE5B5B00EDBF95 /* ex_UIBezierPath_roundedRectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIBezierPath_roundedRectTests.m; sourceTree = "<group>"; };
+		8D7FF59E18FE5C3A00EDBF95 /* MyRoundRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRoundRect.h; sourceTree = "<group>"; };
+		8D7FF59F18FE5C3A00EDBF95 /* MyRoundRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRoundRect.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				8D7FF57F18FE5B5B00EDBF95 /* ViewController.m */,
 				8D7FF58118FE5B5B00EDBF95 /* Images.xcassets */,
 				8D7FF57018FE5B5B00EDBF95 /* Supporting Files */,
+				8D7FF59E18FE5C3A00EDBF95 /* MyRoundRect.h */,
+				8D7FF59F18FE5C3A00EDBF95 /* MyRoundRect.m */,
 			);
 			path = ex_UIBezierPath_roundedRect;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7FF5A018FE5C3A00EDBF95 /* MyRoundRect.m in Sources */,
 				8D7FF58018FE5B5B00EDBF95 /* ViewController.m in Sources */,
 				8D7FF57A18FE5B5B00EDBF95 /* AppDelegate.m in Sources */,
 				8D7FF57618FE5B5B00EDBF95 /* main.m in Sources */,

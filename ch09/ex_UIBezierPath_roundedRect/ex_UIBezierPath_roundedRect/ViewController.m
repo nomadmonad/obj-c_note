@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyRoundRect.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    CGRect theFrame = CGRectMake(0, 0, 150, 150);
+    MyRoundRect *myRoundRect = [[MyRoundRect alloc] initWithFrame:theFrame];
+    
+    myRoundRect.center = CGPointMake(160, 160);
+    [self.view addSubview:myRoundRect];
 }
 
 - (void)didReceiveMemoryWarning
