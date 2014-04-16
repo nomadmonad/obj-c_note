@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyFanShape.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    CGRect rect = CGRectMake(self.view.center.x - 80,
+                             self.view.center.y - 80,
+                             160, 160);
+    MyFanShape *fanShape = [[MyFanShape alloc] initWithFrame:rect];
+    
+    [self.view addSubview:fanShape];
+    
 }
 
 - (void)didReceiveMemoryWarning

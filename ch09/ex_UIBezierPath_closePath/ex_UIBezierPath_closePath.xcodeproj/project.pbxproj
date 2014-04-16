@@ -21,6 +21,7 @@
 		8D7FF61318FE678000EDBF95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7FF5F518FE678000EDBF95 /* UIKit.framework */; };
 		8D7FF61B18FE678000EDBF95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7FF61918FE678000EDBF95 /* InfoPlist.strings */; };
 		8D7FF61D18FE678000EDBF95 /* ex_UIBezierPath_closePathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FF61C18FE678000EDBF95 /* ex_UIBezierPath_closePathTests.m */; };
+		8D7FF62818FE67C600EDBF95 /* MyFanShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FF62718FE67C600EDBF95 /* MyFanShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8D7FF61818FE678000EDBF95 /* ex_UIBezierPath_closePathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIBezierPath_closePathTests-Info.plist"; sourceTree = "<group>"; };
 		8D7FF61A18FE678000EDBF95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7FF61C18FE678000EDBF95 /* ex_UIBezierPath_closePathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIBezierPath_closePathTests.m; sourceTree = "<group>"; };
+		8D7FF62618FE67C600EDBF95 /* MyFanShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFanShape.h; path = ex_UIBezierPath_closePath/MyFanShape.h; sourceTree = "<group>"; };
+		8D7FF62718FE67C600EDBF95 /* MyFanShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyFanShape.m; path = ex_UIBezierPath_closePath/MyFanShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		8D7FF5E518FE678000EDBF95 = {
 			isa = PBXGroup;
 			children = (
+				8D7FF62618FE67C600EDBF95 /* MyFanShape.h */,
+				8D7FF62718FE67C600EDBF95 /* MyFanShape.m */,
 				8D7FF5F718FE678000EDBF95 /* ex_UIBezierPath_closePath */,
 				8D7FF61618FE678000EDBF95 /* ex_UIBezierPath_closePathTests */,
 				8D7FF5F018FE678000EDBF95 /* Frameworks */,
@@ -252,6 +257,7 @@
 				8D7FF60818FE678000EDBF95 /* ViewController.m in Sources */,
 				8D7FF60218FE678000EDBF95 /* AppDelegate.m in Sources */,
 				8D7FF5FE18FE678000EDBF95 /* main.m in Sources */,
+				8D7FF62818FE67C600EDBF95 /* MyFanShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
