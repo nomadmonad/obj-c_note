@@ -14,18 +14,33 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
 
-/*
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    CGFloat cx = self.bounds.size.width / 2;
+    CGFloat cy = self.bounds.size.height / 2;
+    
+    CGPoint center = CGPointMake(cx, cy);
+    CGFloat radius = cx - 20;
+    CGFloat startAngle = 0.0;
+    CGFloat endAngle = (M_PI * 3) / 2;
+    BOOL clockWise = YES;
+    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
+                                                              radius:radius
+                                                          startAngle:startAngle
+                                                            endAngle:endAngle
+                                                           clockwise:clockWise];
+    bezierPath.lineWidth = 20;
+    bezierPath.lineCapStyle = kCGLineCapRound;
+    [bezierPath stroke];
 }
-*/
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyArc.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    CGRect rect = CGRectMake(20, 20, 160, 160);
+    
+    MyArc *arc = [[MyArc alloc] initWithFrame:rect];
+    
+    [self.view addSubview:arc];
+    
 }
 
 - (void)didReceiveMemoryWarning
