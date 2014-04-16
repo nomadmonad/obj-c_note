@@ -19,11 +19,17 @@
 {
     [super viewDidLoad];
 	
-    CGRect rect = CGRectMake(20, 20, 160, 160);
+    CGRect clockWiseRect = CGRectMake(20, 20, 160, 160);
+    MyArc *clockWiseArc = [[MyArc alloc] initWithFrame:clockWiseRect];
+    [clockWiseArc setClockWise:YES];
     
-    MyArc *arc = [[MyArc alloc] initWithFrame:rect];
+    [self.view addSubview:clockWiseArc];
     
-    [self.view addSubview:arc];
+    CGRect reverseClockWiseRect = CGRectMake(20, 180, 160, 160);
+    MyArc *reverseClockWiseArc = [[MyArc alloc] initWithFrame:reverseClockWiseRect];
+    [reverseClockWiseArc setClockWise:NO];
+    
+    [self.view addSubview:reverseClockWiseArc];
     
 }
 

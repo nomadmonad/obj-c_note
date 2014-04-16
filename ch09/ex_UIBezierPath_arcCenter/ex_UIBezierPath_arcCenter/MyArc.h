@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MyArc : UIView
+{
+    BOOL clockWise;
+}
+
+- (void)setClockWise:(BOOL)direction;
 
 @end

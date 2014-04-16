@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        clockWise = YES;
     }
     return self;
 }
@@ -31,7 +32,6 @@
     CGFloat radius = cx - 20;
     CGFloat startAngle = 0.0;
     CGFloat endAngle = (M_PI * 3) / 2;
-    BOOL clockWise = YES;
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
                                                               radius:radius
                                                           startAngle:startAngle
@@ -40,6 +40,12 @@
     bezierPath.lineWidth = 20;
     bezierPath.lineCapStyle = kCGLineCapRound;
     [bezierPath stroke];
+}
+
+
+- (void)setClockWise:(BOOL)direction
+{
+    clockWise = direction;
 }
 
 
