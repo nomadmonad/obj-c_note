@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +15,53 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tombo.png" translatesAutoresizingMaskIntoConstraints="NO" id="R3A-vl-n1E">
+                                <rect key="frame" x="42" y="62" width="97" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tombo.png" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-mQ-1Vr">
+                                <rect key="frame" x="185" y="62" width="97" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tombo.png" translatesAutoresizingMaskIntoConstraints="NO" id="dUX-RE-XvG">
+                                <rect key="frame" x="42" y="203" width="97" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frog1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kRe-Th-vND">
+                                <rect key="frame" x="186" y="215" width="123" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="flower_alpha.png" translatesAutoresizingMaskIntoConstraints="NO" id="XUc-er-fvO">
+                                <rect key="frame" x="32" y="361" width="116" height="124"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="car_L.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-Pu-n8b">
+                                <rect key="frame" x="179" y="401" width="136" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="car" destination="ngP-Pu-n8b" id="e9a-ZA-8D5"/>
+                        <outlet property="flower" destination="XUc-er-fvO" id="QmM-8j-hQk"/>
+                        <outlet property="frog" destination="kRe-Th-vND" id="72h-3o-Q4c"/>
+                        <outlet property="tombo1" destination="R3A-vl-n1E" id="P5U-lG-paA"/>
+                        <outlet property="tombo2" destination="NwH-mQ-1Vr" id="Zic-X0-XEY"/>
+                        <outlet property="tombo3" destination="dUX-RE-XvG" id="hwD-tl-VEn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="car_L.png" width="242" height="109"/>
+        <image name="flower_alpha.png" width="202" height="187"/>
+        <image name="frog1.png" width="123" height="120"/>
+        <image name="tombo.png" width="97" height="119"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
