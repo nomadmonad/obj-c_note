@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *heartImage;
 
 @end
 
@@ -18,6 +19,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    CGFloat cx = self.view.center.x;
+    CGFloat cy = self.view.center.y;
+    
+    UIViewAnimationOptions options =
+        UIViewAnimationOptionCurveEaseInOut
+        | UIViewAnimationOptionAutoreverse
+        | UIViewAnimationOptionRepeat;
+    
+    [UIView animateWithDuration:1.0
+                          delay:2.0
+                        options:options
+                     animations:^{
+                        _heartImage.center = CGPointMake(cx, cy + 50);
+                     }
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
