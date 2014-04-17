@@ -9,6 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    NSArray *animationSeq;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *frogImage;
+- (IBAction)tapFrog:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -17,7 +22,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	animationSeq = @[[UIImage imageNamed:@"frog1.png"],
+                     [UIImage imageNamed:@"frog2.png"],
+                     [UIImage imageNamed:@"frog3.png"],
+                     [UIImage imageNamed:@"frog4.png"]];
+    _frogImage.animationImages = animationSeq;
+    
+    _frogImage.animationDuration = 0.5;
+    _frogImage.animationRepeatCount = 2;
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapFrog:(UITapGestureRecognizer *)sender {
+    if ([_frogImage isAnimating]) {
+        [_frogImage stopAnimating];
+    } else {
+        [_frogImage startAnimating];
+    }
+}
 @end
