@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *heartImage;
 
 @end
 
@@ -17,7 +18,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    UIViewAnimationOptions options = UIViewAnimationOptionCurveEaseInOut
+                            | UIViewAnimationOptionAutoreverse
+                            | UIViewAnimationOptionRepeat;
+    
+    [UIView animateWithDuration:0.8
+                          delay:2.0
+                        options:options
+                     animations:^{
+                         _heartImage.transform = CGAffineTransformMakeScale(2.0, 2.0);
+                         _heartImage.transform = CGAffineTransformMakeRotation(M_PI / 4);
+                     }
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
