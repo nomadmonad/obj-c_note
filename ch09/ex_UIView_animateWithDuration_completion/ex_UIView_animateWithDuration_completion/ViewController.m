@@ -36,7 +36,7 @@
     _tomboImage.transform = CGAffineTransformMakeRotation(angle);
     
     UIViewAnimationOptions options = UIViewAnimationOptionBeginFromCurrentState
-                            | UIViewAnimationOptionAllowUserInteraction
+                            | UIViewAnimationOptionAlslowUserInteraction
                             | UIViewAnimationOptionCurveEaseOut;
     
     [UIView animateWithDuration:1.0
@@ -72,15 +72,17 @@
 - (CGPoint)randamPoint
 {
     int height = self.view.bounds.size.height + 100;
-    int y = arc4random() % height - 50;
+    int y = (arc4random() % height) - 50;
     
-    CGPoint pt;
+    int x;
     int isLeft = arc4random() % 2;
     if (isLeft) {
-        pt = CGPointMake(-100.0, y);
+        x = -100.0;
     } else {
-        pt = CGPointMake(self.view.bounds.size.width + 100.0, y);
+        x = self.view.bounds.size.width + 100.0;
     }
+    
+    CGPoint pt = CGPointMake(x, y);
     
     return pt;
 }
