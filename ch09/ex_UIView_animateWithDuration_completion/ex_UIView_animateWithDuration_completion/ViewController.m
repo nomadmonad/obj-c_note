@@ -36,7 +36,7 @@
     _tomboImage.transform = CGAffineTransformMakeRotation(angle);
     
     UIViewAnimationOptions options = UIViewAnimationOptionBeginFromCurrentState
-                            | UIViewAnimationOptionAlslowUserInteraction
+                            | UIViewAnimationOptionAllowUserInteraction
                             | UIViewAnimationOptionCurveEaseOut;
     
     [UIView animateWithDuration:1.0
