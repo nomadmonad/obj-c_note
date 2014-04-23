@@ -9,6 +9,12 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    int no;
+}
+@property (weak, nonatomic) IBOutlet UIView *myView;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+- (IBAction)tapView:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -17,7 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	no = 0;
+    _myLabel.text = [NSString stringWithFormat:@"%d", no];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +33,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapView:(UITapGestureRecognizer *)sender {
+    [UIView transitionWithView:_myView
+                      duration:4
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        _myLabel.text = [NSString stringWithFormat:@"%d", ++no];
+                    }
+                    completion:nil];
+}
 @end
