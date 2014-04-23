@@ -21,6 +21,8 @@
 		8DAF9BC819074A4E00AC92EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAF9BAA19074A4E00AC92EA /* UIKit.framework */; };
 		8DAF9BD019074A4E00AC92EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DAF9BCE19074A4E00AC92EA /* InfoPlist.strings */; };
 		8DAF9BD219074A4E00AC92EA /* ex_UIInterpolatingUIEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF9BD119074A4E00AC92EA /* ex_UIInterpolatingUIEffectTests.m */; };
+		8DAF9BDD19074D4A00AC92EA /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DAF9BDB19074D4A00AC92EA /* stars.png */; };
+		8DAF9BDE19074D4A00AC92EA /* tree-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DAF9BDC19074D4A00AC92EA /* tree-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8DAF9BCD19074A4E00AC92EA /* ex_UIInterpolatingUIEffectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIInterpolatingUIEffectTests-Info.plist"; sourceTree = "<group>"; };
 		8DAF9BCF19074A4E00AC92EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DAF9BD119074A4E00AC92EA /* ex_UIInterpolatingUIEffectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIInterpolatingUIEffectTests.m; sourceTree = "<group>"; };
+		8DAF9BDB19074D4A00AC92EA /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		8DAF9BDC19074D4A00AC92EA /* tree-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				8DAF9BB819074A4E00AC92EA /* Main.storyboard */,
 				8DAF9BBB19074A4E00AC92EA /* ViewController.h */,
 				8DAF9BBC19074A4E00AC92EA /* ViewController.m */,
+				8DAF9BDB19074D4A00AC92EA /* stars.png */,
+				8DAF9BDC19074D4A00AC92EA /* tree-2.png */,
 				8DAF9BBE19074A4E00AC92EA /* Images.xcassets */,
 				8DAF9BAD19074A4E00AC92EA /* Supporting Files */,
 			);
@@ -229,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DAF9BBF19074A4E00AC92EA /* Images.xcassets in Resources */,
+				8DAF9BDE19074D4A00AC92EA /* tree-2.png in Resources */,
+				8DAF9BDD19074D4A00AC92EA /* stars.png in Resources */,
 				8DAF9BB119074A4E00AC92EA /* InfoPlist.strings in Resources */,
 				8DAF9BBA19074A4E00AC92EA /* Main.storyboard in Resources */,
 			);
