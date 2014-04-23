@@ -21,6 +21,7 @@
 		8D4170B91907A82F0038351C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D41709B1907A82F0038351C /* UIKit.framework */; };
 		8D4170C11907A82F0038351C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D4170BF1907A82F0038351C /* InfoPlist.strings */; };
 		8D4170C31907A82F0038351C /* ex_UIDA_Gravity_CollisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4170C21907A82F0038351C /* ex_UIDA_Gravity_CollisionTests.m */; };
+		8D4170CD1907A8C60038351C /* azarashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4170CC1907A8C60038351C /* azarashi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D4170BE1907A82F0038351C /* ex_UIDA_Gravity_CollisionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIDA_Gravity_CollisionTests-Info.plist"; sourceTree = "<group>"; };
 		8D4170C01907A82F0038351C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D4170C21907A82F0038351C /* ex_UIDA_Gravity_CollisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIDA_Gravity_CollisionTests.m; sourceTree = "<group>"; };
+		8D4170CC1907A8C60038351C /* azarashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = azarashi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8D4170A91907A82F0038351C /* Main.storyboard */,
 				8D4170AC1907A82F0038351C /* ViewController.h */,
 				8D4170AD1907A82F0038351C /* ViewController.m */,
+				8D4170CC1907A8C60038351C /* azarashi.png */,
 				8D4170AF1907A82F0038351C /* Images.xcassets */,
 				8D41709E1907A82F0038351C /* Supporting Files */,
 			);
@@ -230,6 +233,7 @@
 			files = (
 				8D4170B01907A82F0038351C /* Images.xcassets in Resources */,
 				8D4170A21907A82F0038351C /* InfoPlist.strings in Resources */,
+				8D4170CD1907A8C60038351C /* azarashi.png in Resources */,
 				8D4170AB1907A82F0038351C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
