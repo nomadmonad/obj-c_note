@@ -21,6 +21,8 @@
 		8D15762C1909FF5500C11916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D15760E1909FF5500C11916 /* UIKit.framework */; };
 		8D1576341909FF5500C11916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1576321909FF5500C11916 /* InfoPlist.strings */; };
 		8D1576361909FF5500C11916 /* ex_UIDA_Gravity_Collision_bezierPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1576351909FF5500C11916 /* ex_UIDA_Gravity_Collision_bezierPathTests.m */; };
+		8D157642190A386600C11916 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D157641190A386600C11916 /* frog.png */; };
+		8D157648190A389000C11916 /* DrawBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D157647190A389000C11916 /* DrawBezierPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		8D1576311909FF5500C11916 /* ex_UIDA_Gravity_Collision_bezierPathTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIDA_Gravity_Collision_bezierPathTests-Info.plist"; sourceTree = "<group>"; };
 		8D1576331909FF5500C11916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D1576351909FF5500C11916 /* ex_UIDA_Gravity_Collision_bezierPathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIDA_Gravity_Collision_bezierPathTests.m; sourceTree = "<group>"; };
+		8D157641190A386600C11916 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		8D157646190A389000C11916 /* DrawBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBezierPath.h; sourceTree = "<group>"; };
+		8D157647190A389000C11916 /* DrawBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBezierPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +122,11 @@
 				8D15761C1909FF5500C11916 /* Main.storyboard */,
 				8D15761F1909FF5500C11916 /* ViewController.h */,
 				8D1576201909FF5500C11916 /* ViewController.m */,
+				8D157641190A386600C11916 /* frog.png */,
 				8D1576221909FF5500C11916 /* Images.xcassets */,
 				8D1576111909FF5500C11916 /* Supporting Files */,
+				8D157646190A389000C11916 /* DrawBezierPath.h */,
+				8D157647190A389000C11916 /* DrawBezierPath.m */,
 			);
 			path = ex_UIDA_Gravity_Collision_bezierPath;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1576231909FF5500C11916 /* Images.xcassets in Resources */,
+				8D157642190A386600C11916 /* frog.png in Resources */,
 				8D1576151909FF5500C11916 /* InfoPlist.strings in Resources */,
 				8D15761E1909FF5500C11916 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +261,7 @@
 				8D1576211909FF5500C11916 /* ViewController.m in Sources */,
 				8D15761B1909FF5500C11916 /* AppDelegate.m in Sources */,
 				8D1576171909FF5500C11916 /* main.m in Sources */,
+				8D157648190A389000C11916 /* DrawBezierPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
