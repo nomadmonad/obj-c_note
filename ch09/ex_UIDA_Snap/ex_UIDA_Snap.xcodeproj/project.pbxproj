@@ -21,6 +21,8 @@
 		8D1576BA190A48AA00C11916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D15769C190A48AA00C11916 /* UIKit.framework */; };
 		8D1576C2190A48AA00C11916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1576C0190A48AA00C11916 /* InfoPlist.strings */; };
 		8D1576C4190A48AA00C11916 /* ex_UIDA_SnapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1576C3190A48AA00C11916 /* ex_UIDA_SnapTests.m */; };
+		8D1576CE190A48F200C11916 /* kaeru_body.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1576CD190A48F200C11916 /* kaeru_body.png */; };
+		8D1576D0190A48FD00C11916 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1576CF190A48FD00C11916 /* eye.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8D1576BF190A48AA00C11916 /* ex_UIDA_SnapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIDA_SnapTests-Info.plist"; sourceTree = "<group>"; };
 		8D1576C1190A48AA00C11916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D1576C3190A48AA00C11916 /* ex_UIDA_SnapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIDA_SnapTests.m; sourceTree = "<group>"; };
+		8D1576CD190A48F200C11916 /* kaeru_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaeru_body.png; sourceTree = "<group>"; };
+		8D1576CF190A48FD00C11916 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				8D1576AA190A48AA00C11916 /* Main.storyboard */,
 				8D1576AD190A48AA00C11916 /* ViewController.h */,
 				8D1576AE190A48AA00C11916 /* ViewController.m */,
+				8D1576CF190A48FD00C11916 /* eye.png */,
+				8D1576CD190A48F200C11916 /* kaeru_body.png */,
 				8D1576B0190A48AA00C11916 /* Images.xcassets */,
 				8D15769F190A48AA00C11916 /* Supporting Files */,
 			);
@@ -230,7 +236,9 @@
 			files = (
 				8D1576B1190A48AA00C11916 /* Images.xcassets in Resources */,
 				8D1576A3190A48AA00C11916 /* InfoPlist.strings in Resources */,
+				8D1576CE190A48F200C11916 /* kaeru_body.png in Resources */,
 				8D1576AC190A48AA00C11916 /* Main.storyboard in Resources */,
+				8D1576D0190A48FD00C11916 /* eye.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
