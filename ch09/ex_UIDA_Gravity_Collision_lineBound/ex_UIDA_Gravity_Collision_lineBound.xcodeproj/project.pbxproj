@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1575F71909EE8600C11916 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D1575F61909EE8600C11916 /* frog.png */; };
+		8D1575FD1909F07F00C11916 /* DrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1575FC1909F07F00C11916 /* DrawLine.m */; };
 		8D3F481D1908FE37000144A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3F481C1908FE37000144A0 /* Foundation.framework */; };
 		8D3F481F1908FE37000144A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3F481E1908FE37000144A0 /* CoreGraphics.framework */; };
 		8D3F48211908FE37000144A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3F48201908FE37000144A0 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D1575F61909EE8600C11916 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		8D1575FB1909F07F00C11916 /* DrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLine.h; sourceTree = "<group>"; };
+		8D1575FC1909F07F00C11916 /* DrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLine.m; sourceTree = "<group>"; };
 		8D3F48191908FE37000144A0 /* ex_UIDA_Gravity_Collision_lineBound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ex_UIDA_Gravity_Collision_lineBound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3F481C1908FE37000144A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8D3F481E1908FE37000144A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,8 +122,11 @@
 				8D3F482E1908FE37000144A0 /* Main.storyboard */,
 				8D3F48311908FE37000144A0 /* ViewController.h */,
 				8D3F48321908FE37000144A0 /* ViewController.m */,
+				8D1575F61909EE8600C11916 /* frog.png */,
 				8D3F48341908FE37000144A0 /* Images.xcassets */,
 				8D3F48231908FE37000144A0 /* Supporting Files */,
+				8D1575FB1909F07F00C11916 /* DrawLine.h */,
+				8D1575FC1909F07F00C11916 /* DrawLine.m */,
 			);
 			path = ex_UIDA_Gravity_Collision_lineBound;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3F48351908FE37000144A0 /* Images.xcassets in Resources */,
+				8D1575F71909EE8600C11916 /* frog.png in Resources */,
 				8D3F48271908FE37000144A0 /* InfoPlist.strings in Resources */,
 				8D3F48301908FE37000144A0 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +261,7 @@
 				8D3F48331908FE37000144A0 /* ViewController.m in Sources */,
 				8D3F482D1908FE37000144A0 /* AppDelegate.m in Sources */,
 				8D3F48291908FE37000144A0 /* main.m in Sources */,
+				8D1575FD1909F07F00C11916 /* DrawLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +466,7 @@
 				8D3F484D1908FE37000144A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D3F484E1908FE37000144A0 /* Build configuration list for PBXNativeTarget "ex_UIDA_Gravity_Collision_lineBoundTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +475,7 @@
 				8D3F48501908FE37000144A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
