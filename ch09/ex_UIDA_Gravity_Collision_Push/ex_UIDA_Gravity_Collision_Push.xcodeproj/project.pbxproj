@@ -21,6 +21,7 @@
 		8D157677190A415F00C11916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D157659190A415F00C11916 /* UIKit.framework */; };
 		8D15767F190A415F00C11916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D15767D190A415F00C11916 /* InfoPlist.strings */; };
 		8D157681190A415F00C11916 /* ex_UIDA_Gravity_Collision_PushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D157680190A415F00C11916 /* ex_UIDA_Gravity_Collision_PushTests.m */; };
+		8D15768B190A41A900C11916 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D15768A190A41A900C11916 /* frog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D15767C190A415F00C11916 /* ex_UIDA_Gravity_Collision_PushTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_UIDA_Gravity_Collision_PushTests-Info.plist"; sourceTree = "<group>"; };
 		8D15767E190A415F00C11916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D157680190A415F00C11916 /* ex_UIDA_Gravity_Collision_PushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_UIDA_Gravity_Collision_PushTests.m; sourceTree = "<group>"; };
+		8D15768A190A41A900C11916 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8D157667190A415F00C11916 /* Main.storyboard */,
 				8D15766A190A415F00C11916 /* ViewController.h */,
 				8D15766B190A415F00C11916 /* ViewController.m */,
+				8D15768A190A41A900C11916 /* frog.png */,
 				8D15766D190A415F00C11916 /* Images.xcassets */,
 				8D15765C190A415F00C11916 /* Supporting Files */,
 			);
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15766E190A415F00C11916 /* Images.xcassets in Resources */,
+				8D15768B190A41A900C11916 /* frog.png in Resources */,
 				8D157660190A415F00C11916 /* InfoPlist.strings in Resources */,
 				8D157669190A415F00C11916 /* Main.storyboard in Resources */,
 			);
