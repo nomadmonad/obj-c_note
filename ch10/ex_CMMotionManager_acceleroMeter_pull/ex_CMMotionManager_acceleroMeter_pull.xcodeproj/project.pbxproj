@@ -21,6 +21,7 @@
 		8D37585D1910E2AA006A3C69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D37583F1910E2AA006A3C69 /* UIKit.framework */; };
 		8D3758651910E2AA006A3C69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3758631910E2AA006A3C69 /* InfoPlist.strings */; };
 		8D3758671910E2AA006A3C69 /* ex_CMMotionManager_acceleroMeter_pullTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3758661910E2AA006A3C69 /* ex_CMMotionManager_acceleroMeter_pullTests.m */; };
+		8D3758711910E33B006A3C69 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3758701910E33B006A3C69 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D3758621910E2AA006A3C69 /* ex_CMMotionManager_acceleroMeter_pullTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_CMMotionManager_acceleroMeter_pullTests-Info.plist"; sourceTree = "<group>"; };
 		8D3758641910E2AA006A3C69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3758661910E2AA006A3C69 /* ex_CMMotionManager_acceleroMeter_pullTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_CMMotionManager_acceleroMeter_pullTests.m; sourceTree = "<group>"; };
+		8D3758701910E33B006A3C69 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3758711910E33B006A3C69 /* CoreMotion.framework in Frameworks */,
 				8D37583E1910E2AA006A3C69 /* CoreGraphics.framework in Frameworks */,
 				8D3758401910E2AA006A3C69 /* UIKit.framework in Frameworks */,
 				8D37583C1910E2AA006A3C69 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		8D37583A1910E2AA006A3C69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D3758701910E33B006A3C69 /* CoreMotion.framework */,
 				8D37583B1910E2AA006A3C69 /* Foundation.framework */,
 				8D37583D1910E2AA006A3C69 /* CoreGraphics.framework */,
 				8D37583F1910E2AA006A3C69 /* UIKit.framework */,
