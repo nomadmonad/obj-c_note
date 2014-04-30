@@ -21,6 +21,7 @@
 		8D3757901910BA96006A3C69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3757721910BA96006A3C69 /* UIKit.framework */; };
 		8D3757981910BA96006A3C69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3757961910BA96006A3C69 /* InfoPlist.strings */; };
 		8D37579A1910BA96006A3C69 /* ex_NSNotificationCencer_deviceOrientationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3757991910BA96006A3C69 /* ex_NSNotificationCencer_deviceOrientationTests.m */; };
+		8D3757A41910BFC5006A3C69 /* ABCD.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3757A31910BFC5006A3C69 /* ABCD.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8D3757951910BA96006A3C69 /* ex_NSNotificationCencer_deviceOrientationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_NSNotificationCencer_deviceOrientationTests-Info.plist"; sourceTree = "<group>"; };
 		8D3757971910BA96006A3C69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3757991910BA96006A3C69 /* ex_NSNotificationCencer_deviceOrientationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_NSNotificationCencer_deviceOrientationTests.m; sourceTree = "<group>"; };
+		8D3757A31910BFC5006A3C69 /* ABCD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ABCD.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				8D3757801910BA96006A3C69 /* Main.storyboard */,
 				8D3757831910BA96006A3C69 /* ViewController.h */,
 				8D3757841910BA96006A3C69 /* ViewController.m */,
+				8D3757A31910BFC5006A3C69 /* ABCD.png */,
 				8D3757861910BA96006A3C69 /* Images.xcassets */,
 				8D3757751910BA96006A3C69 /* Supporting Files */,
 			);
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3757871910BA96006A3C69 /* Images.xcassets in Resources */,
+				8D3757A41910BFC5006A3C69 /* ABCD.png in Resources */,
 				8D3757791910BA96006A3C69 /* InfoPlist.strings in Resources */,
 				8D3757821910BA96006A3C69 /* Main.storyboard in Resources */,
 			);
