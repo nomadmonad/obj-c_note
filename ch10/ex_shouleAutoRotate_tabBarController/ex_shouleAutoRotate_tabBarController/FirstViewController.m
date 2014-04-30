@@ -45,6 +45,11 @@
     } else {
         [_myTabBarController showTabBar:YES];
     }
+    
+    if (toInterfaceOrientation == UIDeviceOrientationFaceUp
+        || toInterfaceOrientation == UIDeviceOrientationFaceDown) {
+        NSLog(@"Hit Here");
+    }
 }
 
 @end
