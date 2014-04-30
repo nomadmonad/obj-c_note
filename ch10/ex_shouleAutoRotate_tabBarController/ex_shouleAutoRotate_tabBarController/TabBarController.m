@@ -44,6 +44,12 @@
 {
     return [self.selectedViewController supportedInterfaceOrientations];
 }
+
+- (void)showTabBar:(BOOL)isShow
+{
+    UITabBar *tabBar = self.tabBar;
+    tabBar.hidden = !isShow;
+}
 /*
 #pragma mark - Navigation
 

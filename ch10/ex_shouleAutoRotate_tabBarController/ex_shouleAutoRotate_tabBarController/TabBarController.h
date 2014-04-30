@@ -10,4 +10,5 @@
 
 @interface TabBarController : UITabBarController
 
+- (void)showTabBar:(BOOL)isShow;
 @end

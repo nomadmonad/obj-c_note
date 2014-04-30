@@ -7,9 +7,10 @@
 //
 
 #import "FirstViewController.h"
+#import "TabBarController.h"
 
 @interface FirstViewController ()
-
+@property (nonatomic, readonly, strong) TabBarController* myTabBarController;
 @end
 
 @implementation FirstViewController
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	_myTabBarController = (TabBarController *)self.tabBarController;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +36,15 @@
 {
     return UIInterfaceOrientationMaskAll;
 }
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight
+        || toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+        [_myTabBarController showTabBar:NO];
+    } else {
+        [_myTabBarController showTabBar:YES];
+    }
+}
+
 @end
