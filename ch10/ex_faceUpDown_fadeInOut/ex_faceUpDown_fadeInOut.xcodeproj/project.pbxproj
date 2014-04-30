@@ -21,6 +21,8 @@
 		8D3757D31910C839006A3C69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3757B51910C839006A3C69 /* UIKit.framework */; };
 		8D3757DB1910C839006A3C69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3757D91910C839006A3C69 /* InfoPlist.strings */; };
 		8D3757DD1910C839006A3C69 /* ex_faceUpDown_fadeInOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3757DC1910C839006A3C69 /* ex_faceUpDown_fadeInOutTests.m */; };
+		8D3757E71910C8B3006A3C69 /* tombo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3757E61910C8B3006A3C69 /* tombo.png */; };
+		8D3757E91910C8BA006A3C69 /* dai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3757E81910C8BA006A3C69 /* dai.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8D3757D81910C839006A3C69 /* ex_faceUpDown_fadeInOutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_faceUpDown_fadeInOutTests-Info.plist"; sourceTree = "<group>"; };
 		8D3757DA1910C839006A3C69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3757DC1910C839006A3C69 /* ex_faceUpDown_fadeInOutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_faceUpDown_fadeInOutTests.m; sourceTree = "<group>"; };
+		8D3757E61910C8B3006A3C69 /* tombo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tombo.png; sourceTree = "<group>"; };
+		8D3757E81910C8BA006A3C69 /* dai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dai.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				8D3757C31910C839006A3C69 /* Main.storyboard */,
 				8D3757C61910C839006A3C69 /* ViewController.h */,
 				8D3757C71910C839006A3C69 /* ViewController.m */,
+				8D3757E61910C8B3006A3C69 /* tombo.png */,
+				8D3757E81910C8BA006A3C69 /* dai.jpg */,
 				8D3757C91910C839006A3C69 /* Images.xcassets */,
 				8D3757B81910C839006A3C69 /* Supporting Files */,
 			);
@@ -229,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3757CA1910C839006A3C69 /* Images.xcassets in Resources */,
+				8D3757E71910C8B3006A3C69 /* tombo.png in Resources */,
+				8D3757E91910C8BA006A3C69 /* dai.jpg in Resources */,
 				8D3757BC1910C839006A3C69 /* InfoPlist.strings in Resources */,
 				8D3757C51910C839006A3C69 /* Main.storyboard in Resources */,
 			);
