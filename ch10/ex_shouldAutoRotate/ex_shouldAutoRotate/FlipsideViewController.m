@@ -9,7 +9,11 @@
 #import "FlipsideViewController.h"
 
 @interface FlipsideViewController ()
-
+{
+    UIDevice* device;
+    CGRect textViewFrame;
+}
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
 @end
 
 @implementation FlipsideViewController
@@ -17,7 +21,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    device = [UIDevice currentDevice];
+    textViewFrame = CGRectMake(240, 85, 200, 200);
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,12 +35,38 @@
 
 - (BOOL) shouldAutorotate
 {
+    switch (device.orientation) {
+        case UIDeviceOrientationPortrait:
+            return YES;
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            return NO;
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            _myTextView.frame = textViewFrame;
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            _myTextView.frame = textViewFrame;
+        default:
+            return YES;
+            break;
+    }
     return YES;
 }
 
 - (NSUInteger) supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskPortrait;
+    return (UIInterfaceOrientationMaskPortrait
+            | UIInterfaceOrientationMaskLandscapeRight
+            | UIInterfaceOrientationMaskLandscapeLeft);
+}
+
+- (void) viewDidLayoutSubviews
+{
+    if (device.orientation == UIDeviceOrientationLandscapeRight
+        || device.orientation == UIDeviceOrientationLandscapeLeft) {
+        _myTextView.frame = textViewFrame;
+    }
 }
 
 #pragma mark - Actions
