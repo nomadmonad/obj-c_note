@@ -391,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ex_shouleAutoRotate_tabBarController/ex_shouleAutoRotate_tabBarController-Prefix.pch";
 				INFOPLIST_FILE = "ex_shouleAutoRotate_tabBarController/ex_shouleAutoRotate_tabBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ex_shouleAutoRotate_tabBarController/ex_shouleAutoRotate_tabBarController-Prefix.pch";
 				INFOPLIST_FILE = "ex_shouleAutoRotate_tabBarController/ex_shouleAutoRotate_tabBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -468,6 +470,7 @@
 				8D37575B1910B08B006A3C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D37575C1910B08B006A3C69 /* Build configuration list for PBXNativeTarget "ex_shouleAutoRotate_tabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +479,7 @@
 				8D37575E1910B08B006A3C69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
