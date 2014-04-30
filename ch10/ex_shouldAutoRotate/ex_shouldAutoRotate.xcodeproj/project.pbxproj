@@ -22,6 +22,8 @@
 		8D69DF3F191082C9003AEF0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D69DF1E191082C8003AEF0A /* UIKit.framework */; };
 		8D69DF47191082C9003AEF0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D69DF45191082C9003AEF0A /* InfoPlist.strings */; };
 		8D69DF49191082C9003AEF0A /* ex_shouldAutoRotateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D69DF48191082C9003AEF0A /* ex_shouldAutoRotateTests.m */; };
+		8D69DF54191084E9003AEF0A /* car_L.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D69DF52191084E9003AEF0A /* car_L.png */; };
+		8D69DF55191084E9003AEF0A /* tree-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D69DF53191084E9003AEF0A /* tree-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		8D69DF44191082C9003AEF0A /* ex_shouldAutoRotateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_shouldAutoRotateTests-Info.plist"; sourceTree = "<group>"; };
 		8D69DF46191082C9003AEF0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D69DF48191082C9003AEF0A /* ex_shouldAutoRotateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_shouldAutoRotateTests.m; sourceTree = "<group>"; };
+		8D69DF52191084E9003AEF0A /* car_L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_L.png; sourceTree = "<group>"; };
+		8D69DF53191084E9003AEF0A /* tree-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tree-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				8D69DF30191082C8003AEF0A /* MainViewController.m */,
 				8D69DF32191082C8003AEF0A /* FlipsideViewController.h */,
 				8D69DF33191082C8003AEF0A /* FlipsideViewController.m */,
+				8D69DF52191084E9003AEF0A /* car_L.png */,
+				8D69DF53191084E9003AEF0A /* tree-2.png */,
 				8D69DF35191082C8003AEF0A /* Images.xcassets */,
 				8D69DF21191082C8003AEF0A /* Supporting Files */,
 			);
@@ -234,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D69DF36191082C8003AEF0A /* Images.xcassets in Resources */,
+				8D69DF55191084E9003AEF0A /* tree-2.png in Resources */,
+				8D69DF54191084E9003AEF0A /* car_L.png in Resources */,
 				8D69DF25191082C8003AEF0A /* InfoPlist.strings in Resources */,
 				8D69DF2E191082C8003AEF0A /* Main.storyboard in Resources */,
 			);
