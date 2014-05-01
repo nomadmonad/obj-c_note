@@ -22,6 +22,7 @@
 		8D3758A81910EA11006A3C69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3758A61910EA11006A3C69 /* InfoPlist.strings */; };
 		8D3758AA1910EA11006A3C69 /* ex_CMMotionManager_deviceMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3758A91910EA11006A3C69 /* ex_CMMotionManager_deviceMotionTests.m */; };
 		8D3758B41910EA1F006A3C69 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3758B31910EA1F006A3C69 /* CoreMotion.framework */; };
+		8D3758B61910EAB3006A3C69 /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3758B51910EAB3006A3C69 /* ufo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8D3758A71910EA11006A3C69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D3758A91910EA11006A3C69 /* ex_CMMotionManager_deviceMotionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_CMMotionManager_deviceMotionTests.m; sourceTree = "<group>"; };
 		8D3758B31910EA1F006A3C69 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8D3758B51910EAB3006A3C69 /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ufo.png; path = "../../../../obj-c_note_sample/PART10/chapter10-3/ex_CMMotionManager_deviceMotion/ex_CMMotionManager_deviceMotion/ufo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				8D3758901910EA10006A3C69 /* Main.storyboard */,
 				8D3758931910EA10006A3C69 /* ViewController.h */,
 				8D3758941910EA10006A3C69 /* ViewController.m */,
+				8D3758B51910EAB3006A3C69 /* ufo.png */,
 				8D3758961910EA10006A3C69 /* Images.xcassets */,
 				8D3758851910EA10006A3C69 /* Supporting Files */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3758B61910EAB3006A3C69 /* ufo.png in Resources */,
 				8D3758971910EA10006A3C69 /* Images.xcassets in Resources */,
 				8D3758891910EA10006A3C69 /* InfoPlist.strings in Resources */,
 				8D3758921910EA10006A3C69 /* Main.storyboard in Resources */,
