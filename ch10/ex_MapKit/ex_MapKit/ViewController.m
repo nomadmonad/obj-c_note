@@ -11,6 +11,8 @@
 @interface ViewController ()
 {
     UIColor* defaultColor;
+    CGFloat defaultPitch;
+    CLLocationDistance defaultAltitude;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *trackingButton;
@@ -28,6 +30,11 @@
     [super viewDidLoad];
 	_myMapView.delegate = self;
     _myMapView.showsUserLocation = YES;
+    _myMapView.showsBuildings = NO;
+    
+    defaultAltitude = _myMapView.camera.altitude;
+    defaultPitch = _myMapView.camera.pitch;
+    
     defaultColor = self.view.window.tintColor;
 }
 
@@ -61,17 +68,32 @@
         case 0:
             _myMapView.mapType = MKMapTypeStandard;
             _mytoolBar.alpha = 1.0;
+            _myMapView.camera.altitude = defaultAltitude;
+            _myMapView.camera.pitch = defaultPitch;
+            _myMapView.showsBuildings = NO;
             self.view.window.tintColor = defaultColor;
             break;
         case 1:
             _myMapView.mapType = MKMapTypeSatellite;
             _mytoolBar.alpha = 0.8;
+            _myMapView.camera.altitude = defaultAltitude;
+            _myMapView.camera.pitch = defaultPitch;
+            _myMapView.showsBuildings = NO;
             self.view.window.tintColor = [UIColor whiteColor];
             break;
         case 2:
             _myMapView.mapType = MKMapTypeHybrid;
             _mytoolBar.alpha = 0.8;
+            _myMapView.camera.altitude = defaultAltitude;
+            _myMapView.camera.pitch = defaultPitch;
+            _myMapView.showsBuildings = NO;
             self.view.window.tintColor = [UIColor whiteColor];
+        case 3:
+            _myMapView.mapType = MKMapTypeStandard;
+            _myMapView.camera.altitude = 200;
+            _myMapView.camera.pitch = 70;
+            _myMapView.showsBuildings = YES;
+            self.view.window.tintColor = defaultColor;
         default:
             break;
     }
