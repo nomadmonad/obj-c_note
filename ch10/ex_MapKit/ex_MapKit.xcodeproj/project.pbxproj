@@ -21,6 +21,11 @@
 		8DCAE070191221B9003DA3F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE052191221B9003DA3F7 /* UIKit.framework */; };
 		8DCAE078191221B9003DA3F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCAE076191221B9003DA3F7 /* InfoPlist.strings */; };
 		8DCAE07A191221B9003DA3F7 /* ex_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCAE079191221B9003DA3F7 /* ex_MapKitTests.m */; };
+		8DCAE084191221DD003DA3F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE083191221DD003DA3F7 /* CoreLocation.framework */; };
+		8DCAE086191221E8003DA3F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE085191221E8003DA3F7 /* MapKit.framework */; };
+		8DCAE08A191224F6003DA3F7 /* trackingFollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCAE087191224F6003DA3F7 /* trackingFollow.png */; };
+		8DCAE08B191224F6003DA3F7 /* trackingHeading.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCAE088191224F6003DA3F7 /* trackingHeading.png */; };
+		8DCAE08C191224F6003DA3F7 /* trackingNone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DCAE089191224F6003DA3F7 /* trackingNone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		8DCAE075191221B9003DA3F7 /* ex_MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		8DCAE077191221B9003DA3F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DCAE079191221B9003DA3F7 /* ex_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_MapKitTests.m; sourceTree = "<group>"; };
+		8DCAE083191221DD003DA3F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8DCAE085191221E8003DA3F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8DCAE087191224F6003DA3F7 /* trackingFollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackingFollow.png; sourceTree = "<group>"; };
+		8DCAE088191224F6003DA3F7 /* trackingHeading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackingHeading.png; sourceTree = "<group>"; };
+		8DCAE089191224F6003DA3F7 /* trackingNone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackingNone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCAE086191221E8003DA3F7 /* MapKit.framework in Frameworks */,
+				8DCAE084191221DD003DA3F7 /* CoreLocation.framework in Frameworks */,
 				8DCAE051191221B9003DA3F7 /* CoreGraphics.framework in Frameworks */,
 				8DCAE053191221B9003DA3F7 /* UIKit.framework in Frameworks */,
 				8DCAE04F191221B9003DA3F7 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,8 @@
 		8DCAE04D191221B9003DA3F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DCAE085191221E8003DA3F7 /* MapKit.framework */,
+				8DCAE083191221DD003DA3F7 /* CoreLocation.framework */,
 				8DCAE04E191221B9003DA3F7 /* Foundation.framework */,
 				8DCAE050191221B9003DA3F7 /* CoreGraphics.framework */,
 				8DCAE052191221B9003DA3F7 /* UIKit.framework */,
@@ -117,6 +131,9 @@
 				8DCAE060191221B9003DA3F7 /* Main.storyboard */,
 				8DCAE063191221B9003DA3F7 /* ViewController.h */,
 				8DCAE064191221B9003DA3F7 /* ViewController.m */,
+				8DCAE087191224F6003DA3F7 /* trackingFollow.png */,
+				8DCAE088191224F6003DA3F7 /* trackingHeading.png */,
+				8DCAE089191224F6003DA3F7 /* trackingNone.png */,
 				8DCAE066191221B9003DA3F7 /* Images.xcassets */,
 				8DCAE055191221B9003DA3F7 /* Supporting Files */,
 			);
@@ -230,7 +247,10 @@
 			files = (
 				8DCAE067191221B9003DA3F7 /* Images.xcassets in Resources */,
 				8DCAE059191221B9003DA3F7 /* InfoPlist.strings in Resources */,
+				8DCAE08C191224F6003DA3F7 /* trackingNone.png in Resources */,
 				8DCAE062191221B9003DA3F7 /* Main.storyboard in Resources */,
+				8DCAE08B191224F6003DA3F7 /* trackingHeading.png in Resources */,
+				8DCAE08A191224F6003DA3F7 /* trackingFollow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

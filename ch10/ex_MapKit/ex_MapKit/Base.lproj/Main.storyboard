@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +15,52 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0xA-Pt-kiS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-XO-DsB">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="trackingNone.png" id="eFR-vD-yvp"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JKd-Er-UJF"/>
+                                    <barButtonItem style="plain" id="C2J-Ps-W2R">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="CUV-te-qfT">
+                                            <rect key="frame" x="79" y="7" width="161" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="std"/>
+                                                <segment title="sat"/>
+                                                <segment title="hyb"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="p1O-wr-FCA"/>
+                                    <barButtonItem title="Spot" id="2c2-RM-9Nq"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bhf-XO-DsB" firstAttribute="leading" secondItem="0xA-Pt-kiS" secondAttribute="leading" id="5nV-uX-AYd"/>
+                            <constraint firstAttribute="trailing" secondItem="0xA-Pt-kiS" secondAttribute="trailing" id="A1z-1k-olw"/>
+                            <constraint firstItem="0xA-Pt-kiS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="G3w-Nr-wHO"/>
+                            <constraint firstItem="bhf-XO-DsB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Je8-LP-Hc9"/>
+                            <constraint firstAttribute="bottom" secondItem="bhf-XO-DsB" secondAttribute="bottom" id="N87-YU-nex"/>
+                            <constraint firstItem="bhf-XO-DsB" firstAttribute="trailing" secondItem="0xA-Pt-kiS" secondAttribute="trailing" id="OPh-Od-u7g"/>
+                            <constraint firstItem="bhf-XO-DsB" firstAttribute="top" secondItem="0xA-Pt-kiS" secondAttribute="bottom" id="tjn-HA-a46"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="trackingNone.png" width="31" height="31"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
