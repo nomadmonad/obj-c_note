@@ -11,8 +11,8 @@
 @interface ViewController ()
 {
     UIColor* defaultColor;
-    CGFloat defaultPitch;
-    CLLocationDistance defaultAltitude;
+    CGFloat preservedPitch;
+    CLLocationDistance preservedAltitude;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *trackingButton;
@@ -32,8 +32,8 @@
     _myMapView.showsUserLocation = YES;
     _myMapView.showsBuildings = NO;
     
-    defaultAltitude = _myMapView.camera.altitude;
-    defaultPitch = _myMapView.camera.pitch;
+    preservedAltitude = _myMapView.camera.altitude;
+    preservedPitch = _myMapView.camera.pitch;
     
     defaultColor = self.view.window.tintColor;
 }
@@ -68,26 +68,37 @@
         case 0:
             _myMapView.mapType = MKMapTypeStandard;
             _mytoolBar.alpha = 1.0;
-            _myMapView.camera.altitude = defaultAltitude;
-            _myMapView.camera.pitch = defaultPitch;
+            //_myMapView.camera.altitude = preservedAltitude;
+            _myMapView.camera.pitch = 0.0;
             _myMapView.showsBuildings = NO;
             self.view.window.tintColor = defaultColor;
+            
+            
+            preservedAltitude = _myMapView.camera.altitude;
+            preservedPitch = _myMapView.camera.pitch;
             break;
         case 1:
             _myMapView.mapType = MKMapTypeSatellite;
             _mytoolBar.alpha = 0.8;
-            _myMapView.camera.altitude = defaultAltitude;
-            _myMapView.camera.pitch = defaultPitch;
+            //_myMapView.camera.altitude = preservedAltitude;
+            //_myMapView.camera.pitch = preservedPitch;
             _myMapView.showsBuildings = NO;
             self.view.window.tintColor = [UIColor whiteColor];
+            
+            preservedAltitude = _myMapView.camera.altitude;
+            preservedPitch = _myMapView.camera.pitch;
             break;
         case 2:
             _myMapView.mapType = MKMapTypeHybrid;
             _mytoolBar.alpha = 0.8;
-            _myMapView.camera.altitude = defaultAltitude;
-            _myMapView.camera.pitch = defaultPitch;
+            //_myMapView.camera.altitude = preservedAltitude;
+            //_myMapView.camera.pitch = preservedPitch;
             _myMapView.showsBuildings = NO;
             self.view.window.tintColor = [UIColor whiteColor];
+            
+            preservedAltitude = _myMapView.camera.altitude;
+            preservedPitch = _myMapView.camera.pitch;
+            break;
         case 3:
             _myMapView.mapType = MKMapTypeStandard;
             _myMapView.camera.altitude = 200;
