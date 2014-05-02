@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB78C22191328A400ED9666 /* MyAnnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB78C21191328A400ED9666 /* MyAnnnotation.m */; };
 		8DCAE04F191221B9003DA3F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE04E191221B9003DA3F7 /* Foundation.framework */; };
 		8DCAE051191221B9003DA3F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE050191221B9003DA3F7 /* CoreGraphics.framework */; };
 		8DCAE053191221B9003DA3F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCAE052191221B9003DA3F7 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8DB78C20191328A400ED9666 /* MyAnnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAnnnotation.h; path = ex_MapKit/MyAnnnotation.h; sourceTree = "<group>"; };
+		8DB78C21191328A400ED9666 /* MyAnnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAnnnotation.m; path = ex_MapKit/MyAnnnotation.m; sourceTree = "<group>"; };
 		8DCAE04B191221B9003DA3F7 /* ex_MapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ex_MapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCAE04E191221B9003DA3F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8DCAE050191221B9003DA3F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,8 @@
 		8DCAE042191221B9003DA3F7 = {
 			isa = PBXGroup;
 			children = (
+				8DB78C20191328A400ED9666 /* MyAnnnotation.h */,
+				8DB78C21191328A400ED9666 /* MyAnnnotation.m */,
 				8DCAE054191221B9003DA3F7 /* ex_MapKit */,
 				8DCAE073191221B9003DA3F7 /* ex_MapKitTests */,
 				8DCAE04D191221B9003DA3F7 /* Frameworks */,
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DCAE065191221B9003DA3F7 /* ViewController.m in Sources */,
+				8DB78C22191328A400ED9666 /* MyAnnnotation.m in Sources */,
 				8DCAE05F191221B9003DA3F7 /* AppDelegate.m in Sources */,
 				8DCAE05B191221B9003DA3F7 /* main.m in Sources */,
 			);
@@ -476,6 +482,7 @@
 				8DCAE07F191221B9003DA3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DCAE080191221B9003DA3F7 /* Build configuration list for PBXNativeTarget "ex_MapKitTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +491,7 @@
 				8DCAE082191221B9003DA3F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MyAnnnotation.h"
 
 @interface ViewController ()
 {
     UIColor* defaultColor;
+    MyAnnnotation* myPin;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *trackingButton;
