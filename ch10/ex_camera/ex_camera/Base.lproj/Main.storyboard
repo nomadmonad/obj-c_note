@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,8 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLY-yv-CRq">
+                                <rect key="frame" x="26" y="55" width="268" height="297"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="297" id="GXc-h3-1Q1"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uK-4e-Tu7">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="Ce4-Ui-Xf1">
+                                        <connections>
+                                            <action selector="startCamera:" destination="vXZ-lx-hvc" id="L9D-p2-adr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cqw-kC-c9d"/>
+                                    <barButtonItem style="plain" id="A59-Li-pGV">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="YrE-dN-BXI">
+                                            <rect key="frame" x="255" y="7" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nLY-yv-CRq" firstAttribute="centerX" secondItem="1uK-4e-Tu7" secondAttribute="centerX" id="546-zE-tVo"/>
+                            <constraint firstItem="nLY-yv-CRq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="9ON-0d-dyf"/>
+                            <constraint firstItem="nLY-yv-CRq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="26" id="Y5j-oe-3Aq"/>
+                            <constraint firstItem="1uK-4e-Tu7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ZI6-p7-ZKS"/>
+                            <constraint firstAttribute="bottom" secondItem="1uK-4e-Tu7" secondAttribute="bottom" id="cPl-yE-oDd"/>
+                            <constraint firstAttribute="trailing" secondItem="1uK-4e-Tu7" secondAttribute="trailing" id="wwT-F6-Zjt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="nLY-yv-CRq" id="OwO-Mv-fVk"/>
+                        <outlet property="originalSaveSwitch" destination="YrE-dN-BXI" id="cAa-N7-LOW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

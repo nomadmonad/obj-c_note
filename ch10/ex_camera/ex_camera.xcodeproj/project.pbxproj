@@ -21,6 +21,8 @@
 		8DB78C5119132FF100ED9666 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB78C3319132FF100ED9666 /* UIKit.framework */; };
 		8DB78C5919132FF100ED9666 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DB78C5719132FF100ED9666 /* InfoPlist.strings */; };
 		8DB78C5B19132FF100ED9666 /* ex_cameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB78C5A19132FF100ED9666 /* ex_cameraTests.m */; };
+		8DB78C651913309E00ED9666 /* photoframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB78C641913309E00ED9666 /* photoframe.png */; };
+		8DB78C67191330A700ED9666 /* photoframe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DB78C66191330A700ED9666 /* photoframe2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8DB78C5619132FF100ED9666 /* ex_cameraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ex_cameraTests-Info.plist"; sourceTree = "<group>"; };
 		8DB78C5819132FF100ED9666 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DB78C5A19132FF100ED9666 /* ex_cameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex_cameraTests.m; sourceTree = "<group>"; };
+		8DB78C641913309E00ED9666 /* photoframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoframe.png; sourceTree = "<group>"; };
+		8DB78C66191330A700ED9666 /* photoframe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoframe2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				8DB78C4119132FF100ED9666 /* Main.storyboard */,
 				8DB78C4419132FF100ED9666 /* ViewController.h */,
 				8DB78C4519132FF100ED9666 /* ViewController.m */,
+				8DB78C641913309E00ED9666 /* photoframe.png */,
+				8DB78C66191330A700ED9666 /* photoframe2.png */,
 				8DB78C4719132FF100ED9666 /* Images.xcassets */,
 				8DB78C3619132FF100ED9666 /* Supporting Files */,
 			);
@@ -230,6 +236,8 @@
 			files = (
 				8DB78C4819132FF100ED9666 /* Images.xcassets in Resources */,
 				8DB78C3A19132FF100ED9666 /* InfoPlist.strings in Resources */,
+				8DB78C651913309E00ED9666 /* photoframe.png in Resources */,
+				8DB78C67191330A700ED9666 /* photoframe2.png in Resources */,
 				8DB78C4319132FF100ED9666 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
