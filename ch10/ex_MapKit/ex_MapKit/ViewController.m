@@ -33,6 +33,8 @@
     _myMapView.showsUserLocation = YES;
     _myMapView.showsBuildings = NO;
     defaultColor = self.view.window.tintColor;
+    
+    _mySearchBar.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,10 +119,15 @@
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
     [searchBar resignFirstResponder];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
     CLGeocoder* geoCoder = [[CLGeocoder alloc] init];
     
     [geoCoder geocodeAddressString:searchBar.text
-                 inRegion:nil
+                          inRegion:nil
                  completionHandler:^(NSArray* placeMarks, NSError* error){
                      if (error) {
                          NSLog(@"error occurred: %@", error);
@@ -131,9 +138,8 @@
                          [self moveTo:latitude longitude:longitude];
                      }
                  }];
-    
 }
-     
+
 - (void)moveTo:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
 {
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(latitude, longitude);
