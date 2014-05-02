@@ -11,6 +11,7 @@
 @interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 - (IBAction)selsectPhoto:(UIBarButtonItem *)sender;
+- (IBAction)ActionSocial:(UIBarButtonItem *)sender;
 
 @end
 
@@ -36,6 +37,20 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:picker animated:YES completion:nil];
     }
+}
+
+- (IBAction)ActionSocial:(UIBarButtonItem *)sender {
+    NSString* sharedText = @"何か書く ... #objc_note";
+    NSURL* url = [NSURL URLWithString:@"http://ohshige.com"];
+    NSArray* activityItems = @[sharedText, url, _myImageView.image];
+    
+    UIActivity* activity = [[UIActivity alloc] init];
+    NSArray* appActivities = @[activity];
+    
+    UIActivityViewController* activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems
+                                                                             applicationActivities:appActivities];
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

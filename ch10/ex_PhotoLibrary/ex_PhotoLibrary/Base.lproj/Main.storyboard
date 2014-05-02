@@ -29,6 +29,12 @@
                                             <action selector="selsectPhoto:" destination="vXZ-lx-hvc" id="xne-DB-Rpx"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IAz-aT-MxF"/>
+                                    <barButtonItem systemItem="action" id="HUI-lJ-yQF">
+                                        <connections>
+                                            <action selector="ActionSocial:" destination="vXZ-lx-hvc" id="dQe-9P-1d6"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
