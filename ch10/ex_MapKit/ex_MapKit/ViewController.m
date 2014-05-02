@@ -138,6 +138,11 @@
                          CLLocationDegrees latitude = place.location.coordinate.latitude;
                          CLLocationDegrees longitude = place.location.coordinate.longitude;
                          [self moveTo:latitude longitude:longitude];
+                         
+                         NSString* placeName = place.addressDictionary[@"FormattedAddressLines"][0];
+                         myPin = [[MyAnnnotation alloc] initWithCoordinate:place.location.coordinate
+                                                                     title:placeName];
+                         [_myMapView addAnnotation:myPin];
                      }
                  }];
 }
@@ -147,6 +152,25 @@
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(latitude, longitude);
     MKCoordinateRegion theSpot = MKCoordinateRegionMakeWithDistance(center, 1000, 1000);
     [_myMapView setRegion:theSpot animated:YES];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    if ([annotation.title isEqualToString:@"Current Location"]) {
+        return nil;
+    }
+    
+    NSString* identifier = @"MyPin";
+    MKPinAnnotationView* pin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    
+    if (pin == nil) {
+        pin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                               reuseIdentifier:identifier];
+        pin.animatesDrop = YES;
+        pin.pinColor = MKPinAnnotationColorRed;
+        pin.canShowCallout = YES;
+    }
+    return pin;
 }
 
 @end
