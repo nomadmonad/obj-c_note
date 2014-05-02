@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
+- (IBAction)selsectPhoto:(UIBarButtonItem *)sender;
 
 @end
 
@@ -26,4 +28,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)selsectPhoto:(UIBarButtonItem *)sender {
+}
+
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage* editedImage = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
+    UIImage* sunImage = [UIImage imageNamed:@"sun640"];
+    
+    CGSize theSize = CGSizeMake(640, 640);
+    CGRect theRect = CGRectMake(0, 0, 640, 640);
+    
+}
+
+-(void) imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

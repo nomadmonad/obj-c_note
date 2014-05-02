@@ -24,7 +24,11 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="organize" id="lzh-wp-N1E"/>
+                                    <barButtonItem systemItem="organize" id="lzh-wp-N1E">
+                                        <connections>
+                                            <action selector="selsectPhoto:" destination="vXZ-lx-hvc" id="xne-DB-Rpx"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="sun640.png" translatesAutoresizingMaskIntoConstraints="NO" id="7FZ-LE-091">
@@ -34,6 +38,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="BYp-w8-fo3" id="GUn-GF-5rg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
