@@ -15,9 +15,12 @@
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *trackingButton;
 @property (weak, nonatomic) IBOutlet UIToolbar *mytoolBar;
+@property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
 - (IBAction)tapTrackingButton:(UIBarButtonItem *)sender;
 - (IBAction)tapMapTypeSegment:(UISegmentedControl *)sender;
 - (IBAction)tapSpotButton:(UIBarButtonItem *)sender;
+
+- (void)moveTo:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude;
 
 @end
 
@@ -104,4 +107,38 @@
 {
     _trackingButton.image = [UIImage imageNamed:@"trackingNone.png"];
 }
+
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+    CLGeocoder* geoCoder = [[CLGeocoder alloc] init];
+    
+    [geoCoder geocodeAddressString:searchBar.text
+                 inRegion:nil
+                 completionHandler:^(NSArray* placeMarks, NSError* error){
+                     if (error) {
+                         NSLog(@"error occurred: %@", error);
+                     } else {
+                         CLPlacemark* place = placeMarks[0];
+                         CLLocationDegrees latitude = place.location.coordinate.latitude;
+                         CLLocationDegrees longitude = place.location.coordinate.longitude;
+                         [self moveTo:latitude longitude:longitude];
+                     }
+                 }];
+    
+}
+     
+- (void)moveTo:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
+{
+    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(latitude, longitude);
+    MKCoordinateRegion theSpot = MKCoordinateRegionMakeWithDistance(center, 1000, 1000);
+    [_myMapView setRegion:theSpot animated:YES];
+}
+
 @end

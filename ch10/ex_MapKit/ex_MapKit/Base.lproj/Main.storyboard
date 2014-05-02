@@ -75,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="myMapView" destination="0xA-Pt-kiS" id="Hnf-ms-aPr"/>
+                        <outlet property="mySearchBar" destination="W6p-L2-n6j" id="4Mt-03-5W6"/>
                         <outlet property="mytoolBar" destination="bhf-XO-DsB" id="VTd-06-x2i"/>
                         <outlet property="trackingButton" destination="eFR-vD-yvp" id="nst-Kn-siG"/>
                     </connections>
